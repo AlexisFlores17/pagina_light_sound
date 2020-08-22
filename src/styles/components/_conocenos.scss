@@ -3,3 +3,85 @@
     background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     
   }
+
+  .conocenos-container-home{
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.36363636em;
+    line-height: 1.5;  
+    margin-bottom: 10%;  
+    .content{    
+      width: 80%;
+      margin: 0 auto;
+      font-weight: 100;
+      .description{
+        margin-bottom: 40px;  
+        margin-top: 10%;
+      }
+      h2{
+        font-weight: 300;
+        margin-bottom: 40px;  
+      }
+      p{      
+        margin-bottom: 40px;  
+      }
+      
+    }
+  }
+
+  
+//conocenos detalle
+
+.conocenos-div-img{
+  overflow: hidden;
+  height: 400px;
+  position: relative;
+  text-align: center;
+    img{
+      position:relative;
+      width: 100%;
+      top: 20px;
+    }
+}
+
+.conocenos-container{
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.36363636em;
+  line-height: 1.5;  
+  margin-bottom: 10%;  
+  .content{    
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 100;
+    .description{
+      margin-bottom: 40px;  
+      margin-top: 10%;
+    }
+    h2{
+      font-weight: 300;
+      margin-bottom: 40px;  
+    }
+    p{      
+      margin-bottom: 40px;  
+    }
+    
+  }
+}
+
+//teamMember
+.teamMember-container{
+  margin-bottom: 50px;
+  color: white;
+  .name{
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .descripcion{
+    margin-top: 10px;
+    font-weight: 300;
+  }
+
+}

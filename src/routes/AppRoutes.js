@@ -7,6 +7,7 @@ import {
 import { PaginaPrincipal } from '../pages/PaginaPrincipal'
 import { ConocenosDetalle } from '../pages/conocenos/ConocenosDetalle'
 import { ExploreRoutes } from './ExploreRoutes'
+import { ShowreelDetalle } from '../pages/showreel/ShowreelDetalle'
 
 
 
@@ -17,6 +18,9 @@ export const AppRoutes = () => {
                 <Switch>
                     <Route path='/Conocenos/info'>
                         <ConocenosDetalle />                        
+                    </Route>
+                    <Route path='/ShowReel/info'>
+                        <ShowreelDetalle />                        
                     </Route>
                     <Route path='/'>
                         <PaginaPrincipal />                    
