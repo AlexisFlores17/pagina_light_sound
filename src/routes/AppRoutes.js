@@ -8,6 +8,7 @@ import { PaginaPrincipal } from '../pages/PaginaPrincipal'
 import { ConocenosDetalle } from '../pages/conocenos/ConocenosDetalle'
 import { ExploreRoutes } from './ExploreRoutes'
 import { ShowreelDetalle } from '../pages/showreel/ShowreelDetalle'
+import { ContactoDetalle } from '../pages/contacto/ContactoDetalle'
 
 
 
@@ -21,6 +22,9 @@ export const AppRoutes = () => {
                     </Route>
                     <Route path='/ShowReel/info'>
                         <ShowreelDetalle />                        
+                    </Route>
+                    <Route path='/Contacto/info'>
+                        <ContactoDetalle />                        
                     </Route>
                     <Route path='/'>
                         <PaginaPrincipal />                    
