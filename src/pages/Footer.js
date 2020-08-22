@@ -4,7 +4,7 @@ export const Footer = () => {
     return (
         <footer>
             <div className="container">
-                <div className="row">
+                <div className="row mr-0">
                     <div className="col-sm" id="hagamos">
                         <div className="contactanos">Hagamos algo juntos</div>
                         <div className="project">¿Tienes algún desafío creativo para nosotros? <br/>Nos encantaría escucharlo</div>                       
