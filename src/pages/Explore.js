@@ -29,11 +29,11 @@ export const Explore = () => {
     } 
 
     return (
-            <div className="explore-container">
+            <div className="explore-container col-12">
                 <div  className="menu-secondary-background-color"></div>
                 <div  className="menu-layer">
-                    <div className='row mr-0'>
-                        <div className='explore-texto col-12 col-sm-6 col-md-5'>
+                    <div className='row col-xl-12 col-sm-6'>
+                        <div className='explore-texto col-sm-6 col-md-5 col-6'>
                             <nav>
                                 <ul>
                                 <li>
@@ -51,7 +51,7 @@ export const Explore = () => {
                                 </ul>
                             </nav>
                         </div>
-                        <div className="division-services col-sm-6 col-md-7" >
+                        <div className="division-services col-sm-6 col-md-7 col-6" >
                                 <ExploreRoutes />
                         </div>
                     </div>   
