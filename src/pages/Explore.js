@@ -33,7 +33,7 @@ export const Explore = () => {
                 <div  className="menu-secondary-background-color"></div>
                 <div  className="menu-layer">
                     <div className='row mr-0'>
-                        <div className='col-12 col-sm-6 col-md-5'>
+                        <div className='explore-texto col-12 col-sm-6 col-md-5'>
                             <nav>
                                 <ul>
                                 <li>

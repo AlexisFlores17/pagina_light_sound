@@ -5,23 +5,12 @@
     
   }
 
-  .division-services{
-    background-color: blue;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-        p{
-            text-align: center;
-            color: white;
-        }
-    text-align: center;
-    color: white;
-}
+
 
 .explore-container {
   margin: 0; 
   height: 100vh;
-  width: 100%;  
+  width: 100vh;  
 
   nav {    
     ul {      
@@ -63,4 +52,17 @@
     }
   }
   
+}  
+
+.division-services{
+    background-color: blue;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+        p{
+            text-align: center;
+            color: white;
+        }
+    text-align: center;
+    color: white;
 }
