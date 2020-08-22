@@ -33,7 +33,7 @@ export const Explore = () => {
                 <div  className="menu-secondary-background-color"></div>
                 <div  className="menu-layer">
                     <div className='row col-xl-12 col-sm-6'>
-                        <div className='explore-texto col-sm-6 col-md-5 col-6'>
+                        <div className='explore-texto col-sm-6 col-md-5 col-xl-6'>
                             <nav>
                                 <ul>
                                 <li>
@@ -51,7 +51,7 @@ export const Explore = () => {
                                 </ul>
                             </nav>
                         </div>
-                        <div className="division-services col-sm-6 col-md-7 col-6" >
+                        <div className="division-services col-sm-6 col-md-7 col-xl-6" >
                                 <ExploreRoutes />
                         </div>
                     </div>   

@@ -8,13 +8,11 @@
 
 
 .explore-container {
-  height: 100vh;
-  width: 100vw;
+
 
 }
 
-.explore-texto{
-  
+.explore-texto{ 
   nav {    
     ul {      
       margin: 0;
@@ -27,22 +25,6 @@
         height: 140px;
         overflow: hidden;
         position: relative;
-        @media(max-width: 768px){
-          height: 87px !important;
-          font-size: 3rem !important;
-        }
-        @media(max-width: 300px){
-          height: 75px;
-          font-size: 2rem;
-        }
-        @media(max-height: 810px){
-          height: 105px;
-          font-size: 4rem;
-        }
-        @media(max-height: 630px){
-          height: 87px !important;
-          font-size: 3rem !important;
-        }
         a {
           position: absolute;
           color: #fff;
