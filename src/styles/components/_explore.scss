@@ -8,10 +8,13 @@
 
 
 .explore-container {
-  margin: 0; 
   height: 100vh;
-  width: 100vh;  
+  width: 100vw;
 
+}
+
+.explore-texto{
+  
   nav {    
     ul {      
       margin: 0;
@@ -51,8 +54,7 @@
       }
     }
   }
-  
-}  
+}
 
 .division-services{
     background-color: blue;
