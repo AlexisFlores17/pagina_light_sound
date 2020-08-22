@@ -4,9 +4,9 @@ import arrow from '../images/arrow-right.svg';
 
 export const Home = () => {
     return (
-        <div className="col-12">
+        <>
             <div className="home-video">
-                <video autoPlay muted loop className="myVideo" type="video/mp4" playsInline>
+                <video autoPlay muted loop className="myVideo" type="video/mp4" playsinline>
                     <source src={LSDbackground} />
                 </video>
             </div>
@@ -25,6 +25,6 @@ export const Home = () => {
                     </button>                 
                 </div>             
             </div>   */}
-        </div>
+        </>
     )
 }
