@@ -10,7 +10,10 @@ html{
     position: relative;
   }
 
-
+.home-video{
+  width: 100vw;
+  overflow: hidden;
+}
 
 .myVideo{
   position: absolute;
@@ -33,11 +36,13 @@ html{
   transform: translateY(-20%);
   width: 100%;  
   h5{
-    
+    background-color: rgba($color: #000000, $alpha: 0.6);
     font-size: 24px;
     font-weight: 500;    
     color: white;
     text-align: left;
+    padding: 20px 0;
+    border-radius: 5px;
   }
   .btn-row{
       padding-left: 60px;
