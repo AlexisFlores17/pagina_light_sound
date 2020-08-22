@@ -18,7 +18,7 @@ export const Home = () => {
                 <div className="btn-row animate__animated animate__fadeIn animate__delay-2s ">
                     <button className="explore-button" >Explore
                         <div className="arrow-icon" >
-                        <img src={arrow} alt="row"/>
+                            <a href="#explore-sect"><img src={arrow} alt="row"/></a>
                         </div>
                     </button>                 
                 </div>             

@@ -25,11 +25,11 @@ export const PaginaPrincipal = () => {
 
     return (
             <div className="App" ref = {el => app = el}>
-                <section className="home-section" >
+                <section className="home-section">
                     <Home />
                 </section>
 
-                <section className="explore-section">
+                <section className="explore-section" id="explore-sect">
                     <Explore />
                 </section>
 
