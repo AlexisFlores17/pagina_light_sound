@@ -5,8 +5,8 @@ import {  Link } from "react-router-dom";
 const Header = ({ history}) => {
 
   return (
-    <header>
-      <div className="container">
+    <header >
+      <div className="container" id="header-pag">
         <div className="wrapper">
           <div className="inner-header">
             <div className="logo">

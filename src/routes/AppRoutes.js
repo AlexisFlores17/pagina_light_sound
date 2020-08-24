@@ -17,7 +17,7 @@ export const AppRoutes = () => {
     return (
         <Router>
             <div>
-            <Header />
+
                 <Switch>
                     <Route path='/Conocenos/info'>
                         <ConocenosDetalle />                           

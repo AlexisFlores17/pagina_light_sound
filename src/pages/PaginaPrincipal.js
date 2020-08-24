@@ -9,26 +9,44 @@ import { Showreel } from "./Showreel";
 import { Contacto } from "./Contacto";
 import { Footer } from "./Footer";
 import useOnScreen from "../components/OnScreen";
+import Header from "../components/Header";
 
 export const PaginaPrincipal = () => {
 
     gsap.registerPlugin(ScrollTrigger);
     gsap.registerPlugin(MotionPathPlugin);
   
-    let app = useRef(null)
-  
+    let app = useRef(null);
+
+    const sectionHome = useRef();
     const sectionFooter = useRef();
     
+
     let footerMostrado= false; 
 
+    const onScreenSectionHome = useOnScreen(sectionHome, "-50%");
     const onScreenSectionFooter = useOnScreen(sectionFooter, "0px");
-    if (onScreenSectionFooter && footerMostrado==false) {
-        footerMostrado= true;
+    let header =  document.getElementById('header-pag');
+
+    console.log(header)
+    
+    if (onScreenSectionFooter && footerMostrado===false) {
+        footerMostrado = true;
         document.getElementById('hagamos').classList.add('glow');
         document.getElementById('contacto-animacion').classList.add('glow');
         document.getElementById('copy-animacion').classList.add('glowInf');
     }
-    
+
+    if (onScreenSectionHome) {
+        document.getElementsByTagName('HTML')[0].style.scrollBehavior = 'smooth';
+        header.classList.add('display');
+        
+    }else{    
+        document.getElementsByTagName('HTML')[0].style.scrollBehavior = 'unset'; 
+        if (header !== null) {
+            header.classList.add('display-none');
+        } 
+    }
 
     useEffect(() => {         
       gsap.to(app, 0, {css: {visibility: 'visible'}})//avoids flash    
@@ -36,10 +54,15 @@ export const PaginaPrincipal = () => {
 
     return (
             <div className="App" ref = {el => app = el}>
-                <section className="home-section">
-                    <Home />
-                </section>
-
+                <div>
+                    {/* {
+                        onScreenSectionHome && 
+                    } */}
+                        <Header />
+                    <section className="home-section" ref={sectionHome}>                 
+                        <Home />
+                    </section>
+                </div>
                 <section className="explore-section" id="explore-sect">
                     <Explore />
                 </section>
