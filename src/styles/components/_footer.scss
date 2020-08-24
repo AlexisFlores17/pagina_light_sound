@@ -48,9 +48,8 @@ footer{
         border-bottom: 1px solid;   
         line-height: 2em;
         transition-duration: 300ms;
-        // @media (max-width: 768px){
-        //   color: white;
-        // }
+        color: white;
+        
         &:hover{
           color: gray;
         }
@@ -145,7 +144,7 @@ footer{
       radial-gradient(ellipse at bottom, #fff, transparent, transparent);
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
+    color: transparent !important;
     font-family: "Source Sans Pro", sans-serif;
     animation: reveal 3000ms ease-in-out forwards 200ms,
               glow 2500ms linear infinite 2000ms;
