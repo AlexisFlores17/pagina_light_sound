@@ -19,6 +19,10 @@ export const PaginaPrincipal = () => {
     let app = useRef(null);
 
     const sectionHome = useRef();
+    const sectionExplore = useRef();
+    const sectionConocenos = useRef();
+    const sectionShowreel = useRef();
+    const sectionContacto = useRef();
     const sectionFooter = useRef();
     
 
@@ -26,7 +30,14 @@ export const PaginaPrincipal = () => {
 
     const onScreenSectionHome = useOnScreen(sectionHome, "-50%");
     const onScreenSectionFooter = useOnScreen(sectionFooter, "-20px");
-    
+
+    if (onScreenSectionHome) {
+        document.getElementsByTagName('HTML')[0].style.scrollBehavior = 'smooth';
+        
+    }else{    
+        document.getElementsByTagName('HTML')[0].style.scrollBehavior = 'unset'; 
+    }
+
     if (onScreenSectionFooter && footerMostrado===false) {
         footerMostrado = true;
         document.getElementById('hagamos').classList.add('glow');
@@ -36,12 +47,7 @@ export const PaginaPrincipal = () => {
         document.getElementById('copy-animacion').classList.add('glowInf');
     }
 
-    if (onScreenSectionHome) {
-        document.getElementsByTagName('HTML')[0].style.scrollBehavior = 'smooth';
-        
-    }else{    
-        document.getElementsByTagName('HTML')[0].style.scrollBehavior = 'unset'; 
-    }
+
 
     useEffect(() => {         
       gsap.to(app, 0, {css: {visibility: 'visible'}})//avoids flash    
@@ -51,7 +57,7 @@ export const PaginaPrincipal = () => {
             <div className="App" ref = {el => app = el}>
                 <div>
                     {
-                        !onScreenSectionFooter && <Header />
+                        onScreenSectionHome && <Header />
                     }
                         
                     <section className="home-section" ref={sectionHome}>                 
