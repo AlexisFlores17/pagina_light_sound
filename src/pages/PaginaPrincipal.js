@@ -17,12 +17,18 @@ export const PaginaPrincipal = () => {
   
     let app = useRef(null)
   
-    const sectionOne = useRef();
-    const sectionTwo = useRef();
+    const sectionFooter = useRef();
+    
+    let footerMostrado= false; 
 
-    const onScreenSectionOne = useOnScreen(sectionOne, "-10%");
-    const onScreenSectionTwo = useOnScreen(sectionTwo, "20%");
-    console.log(onScreenSectionOne);
+    const onScreenSectionFooter = useOnScreen(sectionFooter, "0px");
+    if (onScreenSectionFooter && footerMostrado==false) {
+        footerMostrado= true;
+        document.getElementById('hagamos').classList.add('glow');
+        document.getElementById('contacto-animacion').classList.add('glow');
+        document.getElementById('copy-animacion').classList.add('glowInf');
+    }
+    
 
     useEffect(() => {         
       gsap.to(app, 0, {css: {visibility: 'visible'}})//avoids flash    
@@ -34,7 +40,7 @@ export const PaginaPrincipal = () => {
                     <Home />
                 </section>
 
-                <section className="explore-section" id="explore-sect" ref={sectionOne}>
+                <section className="explore-section" id="explore-sect">
                     <Explore />
                 </section>
 
@@ -48,8 +54,10 @@ export const PaginaPrincipal = () => {
                 <section className="contacto-section" >
                     <Contacto />
                 </section>
-                <footer>
+                <footer ref={sectionFooter}>
+    
                     <Footer />
+                
                 </footer>
             </div>
     )
