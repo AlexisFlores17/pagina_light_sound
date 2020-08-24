@@ -8,7 +8,6 @@ import { PaginaPrincipal } from '../pages/PaginaPrincipal'
 import { ConocenosDetalle } from '../pages/conocenos/ConocenosDetalle'
 import { ShowreelDetalle } from '../pages/showreel/ShowreelDetalle'
 import { ContactoDetalle } from '../pages/contacto/ContactoDetalle'
-import Header from '../components/Header'
 import { Footer } from '../pages/Footer'
 
 

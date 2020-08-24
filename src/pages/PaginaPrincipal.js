@@ -19,10 +19,10 @@ export const PaginaPrincipal = () => {
     let app = useRef(null);
 
     const sectionHome = useRef();
-    const sectionExplore = useRef();
-    const sectionConocenos = useRef();
-    const sectionShowreel = useRef();
-    const sectionContacto = useRef();
+    // const sectionExplore = useRef();
+    // const sectionConocenos = useRef();
+    // const sectionShowreel = useRef();
+    // const sectionContacto = useRef();
     const sectionFooter = useRef();
     
 

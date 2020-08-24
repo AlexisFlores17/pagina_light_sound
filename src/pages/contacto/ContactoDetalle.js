@@ -54,7 +54,7 @@ export const ContactoDetalle = () => {
                         </div>
                     </div>
                     <div className="contacto-img col-sm-6 col-xl-6">
-                        <img className="img-fluid rounded" src={imgContacto}/>
+                        <img className="img-fluid rounded" src={imgContacto} alt="imagen contacto"/>
                     </div>
                 </div>
             </div>	
