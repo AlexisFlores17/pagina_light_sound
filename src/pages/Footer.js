@@ -5,15 +5,15 @@ export const Footer = () => {
         <footer>
             <div className="container">
                 <div className="row mr-0">
-                    <div className="col-sm" id="hagamos">
+                    <div className="col-sm glow" id="hagamos">
                         <div className="contactanos">Hagamos algo juntos</div>
                         <div className="project">¿Tienes algún desafío creativo para nosotros? <br/>Nos encantaría escucharlo</div>                       
                     </div>
-                    <div className="col-sm">
+                    <div className="col-sm glow">
                         <p className="contact">
-                            <a href="tel:+52 1 55 2746 0988" rel="noopener noreferrer" target="_blank">+52 1 55 2746 0988</a>
+                            <a href="tel:+52 1 55 2746 0988" rel="noopener noreferrer" target="_blank" className="glowInf">+52 1 55 2746 0988</a>
                             <br/>
-                            <a href="mailto:contacto@lsd.com.mx" rel="noopener noreferrer" target="_blank">contacto@lsdlab.com.mx</a>
+                            <a href="mailto:contacto@lsd.com.mx" rel="noopener noreferrer" target="_blank" className="glowInf">contacto@lsdlab.com.mx</a>
                         </p>
                                                 
                         <h5 className="siguenos">Síguenos</h5>
@@ -49,7 +49,7 @@ export const Footer = () => {
                 
                 
             </div>            
-            <div className="copyright">© LSD LAB 2020</div>
+            <div className="copyright glowInf">© LSD LAB 2020</div>
         </footer>
         
     )
