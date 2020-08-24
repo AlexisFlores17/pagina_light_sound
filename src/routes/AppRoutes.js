@@ -9,6 +9,7 @@ import { ConocenosDetalle } from '../pages/conocenos/ConocenosDetalle'
 import { ShowreelDetalle } from '../pages/showreel/ShowreelDetalle'
 import { ContactoDetalle } from '../pages/contacto/ContactoDetalle'
 import Header from '../components/Header'
+import { Footer } from '../pages/Footer'
 
 
 
@@ -20,13 +21,16 @@ export const AppRoutes = () => {
 
                 <Switch>
                     <Route path='/Conocenos/info'>
-                        <ConocenosDetalle />                           
+                        <ConocenosDetalle />    
+                        <Footer />                       
                     </Route>
                     <Route path='/ShowReel/info'>
-                        <ShowreelDetalle />                       
+                        <ShowreelDetalle />   
+                        <Footer />                     
                     </Route>
                     <Route path='/Contacto/info'>
-                        <ContactoDetalle />                        
+                        <ContactoDetalle />
+                        <Footer />                         
                     </Route>
                     <Route path='/'>
                         <PaginaPrincipal />                    
