@@ -11,7 +11,7 @@ export const Home = () => {
                 </video>
             </div>
 
-            {/* <div className="home-container col-md-6 col-12">
+            <div className="home-container col-md-6 col-10">
                 <h5 className="animate__animated animate__fadeInUp animate__slow">
                     Retamos el sentido de lo establecido con propuestas innovadoras en ciencia, arte y tecnología
                 </h5>   
@@ -24,7 +24,7 @@ export const Home = () => {
                         </a>
                     </button>                 
                 </div>             
-            </div>   */}
+            </div>   
         </>
     )
 }

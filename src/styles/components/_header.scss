@@ -1,0 +1,23 @@
+header {
+    z-index: 10;
+    position: fixed;   
+    .container{
+      width: 100%;
+      max-width: inherit;
+      padding: 0 60px;
+    }
+    background-color: none;
+    .inner-header {    
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;  
+      .logo a {
+        font-weight: 700;
+        font-size: 1rem;
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+  

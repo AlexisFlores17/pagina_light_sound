@@ -8,7 +8,7 @@ import { Conocenos } from "./Conocenos";
 import { Showreel } from "./Showreel";
 import { Contacto } from "./Contacto";
 import { Footer } from "./Footer";
-import {BrowserRouter as Router} from 'react-router-dom'
+import useOnScreen from "../components/OnScreen";
 
 export const PaginaPrincipal = () => {
 
@@ -17,7 +17,12 @@ export const PaginaPrincipal = () => {
   
     let app = useRef(null)
   
-  
+    const sectionOne = useRef();
+    const sectionTwo = useRef();
+
+    const onScreenSectionOne = useOnScreen(sectionOne, "-10%");
+    const onScreenSectionTwo = useOnScreen(sectionTwo, "20%");
+    console.log(onScreenSectionOne);
 
     useEffect(() => {         
       gsap.to(app, 0, {css: {visibility: 'visible'}})//avoids flash    
@@ -29,7 +34,7 @@ export const PaginaPrincipal = () => {
                     <Home />
                 </section>
 
-                <section className="explore-section" id="explore-sect">
+                <section className="explore-section" id="explore-sect" ref={sectionOne}>
                     <Explore />
                 </section>
 
