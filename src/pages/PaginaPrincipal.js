@@ -34,6 +34,8 @@ export const PaginaPrincipal = () => {
         footerMostrado = true;
         document.getElementById('hagamos').classList.add('glow');
         document.getElementById('contacto-animacion').classList.add('glow');
+        document.getElementById('numero-animar').classList.add('glowInf');
+        document.getElementById('correo-animar').classList.add('glowInf');
         document.getElementById('copy-animacion').classList.add('glowInf');
     }
 

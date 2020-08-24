@@ -11,9 +11,9 @@ export const Footer = () => {
                     </div>
                     <div className="col-sm" id="contacto-animacion">
                         <p className="contact">
-                            <a href="tel:+52 1 55 2746 0988" rel="noopener noreferrer" target="_blank" className="glowInf">+52 1 55 2746 0988</a>
+                            <a href="tel:+52 1 55 2746 0988" rel="noopener noreferrer" target="_blank" id="numero-animar">+52 1 55 2746 0988</a>
                             <br/>
-                            <a href="mailto:contacto@lsd.com.mx" rel="noopener noreferrer" target="_blank" className="glowInf">contacto@lsdlab.com.mx</a>
+                            <a href="mailto:contacto@lsd.com.mx" rel="noopener noreferrer" target="_blank" id="correo-animar">contacto@lsdlab.com.mx</a>
                         </p>
                                                 
                         <h5 className="siguenos">Síguenos</h5>
