@@ -25,10 +25,7 @@ export const PaginaPrincipal = () => {
     let footerMostrado= false; 
 
     const onScreenSectionHome = useOnScreen(sectionHome, "-50%");
-    const onScreenSectionFooter = useOnScreen(sectionFooter, "0px");
-    let header =  document.getElementById('header-pag');
-
-    console.log(header)
+    const onScreenSectionFooter = useOnScreen(sectionFooter, "-20px");
     
     if (onScreenSectionFooter && footerMostrado===false) {
         footerMostrado = true;
@@ -41,13 +38,9 @@ export const PaginaPrincipal = () => {
 
     if (onScreenSectionHome) {
         document.getElementsByTagName('HTML')[0].style.scrollBehavior = 'smooth';
-        header.classList.add('display');
         
     }else{    
         document.getElementsByTagName('HTML')[0].style.scrollBehavior = 'unset'; 
-        if (header !== null) {
-            header.classList.add('display-none');
-        } 
     }
 
     useEffect(() => {         
@@ -57,10 +50,10 @@ export const PaginaPrincipal = () => {
     return (
             <div className="App" ref = {el => app = el}>
                 <div>
-                    {/* {
-                        onScreenSectionHome && 
-                    } */}
-                        <Header />
+                    {
+                        !onScreenSectionFooter && <Header />
+                    }
+                        
                     <section className="home-section" ref={sectionHome}>                 
                         <Home />
                     </section>
