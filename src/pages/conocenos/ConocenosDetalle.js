@@ -10,12 +10,12 @@ import mauro from '../../images/mauro.jpeg'
 import equipo from '../../images/equipo.jpg'
 
 const team = [
-	{name: "Alexis Flores", descripcion: "Director tecnológico, curador de memes, siempre buscando nuevas tecnologías(en Amazon). Se pasó el metal slug con una moneda", imagen: alex},
-	{name: "Alexis Guerrero", descripcion: "Director de interactividad, rockstar retirado, amante de los taquitos de tripita y una vez casi hizo un 300 en el boliche", imagen: destruido},
-	{name: "Diana Urquiza", descripcion: "Project Manager y organizadora compulsiva", imagen: diana},
+	{name: "Alexis Flores", descripcion: "Director tecnológico, ", imagen: alex},
+	{name: "Alexis Guerrero", descripcion: "Director de interactividad y rockstar retirado.", imagen: destruido},
+	{name: "Diana Urquiza", descripcion: "Project Manager, directora de vinculación y organizadora compulsiva.", imagen: diana},
 	{name: "Lorenzo Torres", descripcion: "Director creativo, gurú del front-end y K-pop connoisseur.", imagen: lorenzo},	
-	{name: "Mijael Gutiérrez", descripcion: "El nerd del audio del equipo ", imagen: mija},
-	{name: "Mauro Herrera", descripcion: "Entusiasta de la tecnología y amante del mezcal", imagen: mauro},
+	{name: "Mijael Gutiérrez", descripcion: "Director general, Ing. acústico y nerd de audio del equipo.", imagen: mija},
+	{name: "Mauro Herrera", descripcion: "Director artístico, engendro de la deriva académica y no se concentra en una sola cosa.", imagen: mauro},
 	
 ]
 
