@@ -19,7 +19,7 @@ export const PaginaPrincipal = () => {
     let app = useRef(null);
 
     const sectionHome = useRef();
-    // const sectionExplore = useRef();
+    const sectionExplore = useRef();
     // const sectionConocenos = useRef();
     // const sectionShowreel = useRef();
     // const sectionContacto = useRef();
@@ -29,6 +29,7 @@ export const PaginaPrincipal = () => {
     let footerMostrado= false; 
 
     const onScreenSectionHome = useOnScreen(sectionHome, "-50%");
+    const onScreenSectionExplore = useOnScreen(sectionExplore, "-20%");
     const onScreenSectionFooter = useOnScreen(sectionFooter, "-20px");
 
     if (onScreenSectionHome) {
@@ -57,14 +58,14 @@ export const PaginaPrincipal = () => {
             <div className="App" ref = {el => app = el}>
                 <div>
                     {
-                        onScreenSectionHome && <Header />
+                        !onScreenSectionExplore && <Header />
                     }
                         
                     <section className="home-section" ref={sectionHome}>                 
                         <Home />
                     </section>
                 </div>
-                <section className="explore-section" id="explore-sect">
+                <section className="explore-section" id="explore-sect" ref={sectionExplore}>
                     <Explore />
                 </section>
 
