@@ -30,8 +30,8 @@ export const Explore = () => {
 
         <Router>
             <div  className="explore-container">
-                <div className='explore-titulo col-sm-6 col-md-5'>
-                    <nav>
+                <div className='explore-titulo col-sm-6 col-md-6 col-lg-6 col-xl-5'>
+                    <nav className= "text-xl-left">
                         <ul>
                         <li>
                             <Link onMouseEnter={e => handleHover(e)} onMouseOut={e => handleHoverExit(e)} to="/explore/Light">Light</Link>
@@ -48,7 +48,7 @@ export const Explore = () => {
                         </ul>
                     </nav>
                 </div>
-                <div className="explore-descripcion col-sm-6 col-md-7" >
+                <div className="explore-descripcion col-sm-6 col-md-6 col-lg-6 col-xl-7" >
                         <ExploreRoutes />
                 </div>
             </div>

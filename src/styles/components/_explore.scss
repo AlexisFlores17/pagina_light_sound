@@ -12,6 +12,8 @@
   flex-flow: row wrap ;
   width: 100vw;
   height: 100vh;
+  @media(max-width: 1024px){
+  }
 }
 
 .explore-titulo{
@@ -19,10 +21,18 @@
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 4rem;
+  @media(max-width: 320px){
+    font-size: 3rem !important;
+  }
+  @media(max-width: 768px){
+    font-size: 4rem;
+  }
+  font-size: 5rem;
   nav{
-    ul{
+   
+    ul{ 
       li{
+
         list-style: none;
         cursor: pointer;
 
@@ -50,8 +60,3 @@
     color: white;
 }
 
-@media(max-width: 320px){
-  .explore-titulo{
-    font-size: 3rem;
-  }
-}
