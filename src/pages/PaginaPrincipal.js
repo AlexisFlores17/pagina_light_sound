@@ -68,14 +68,14 @@ export const PaginaPrincipal = () => {
                     <Explore />
                 </section>
 
-                <section className="conocenos-section" >
+                <section className="conocenos-section" id="conocenos-sect">
                     <Conocenos />
                 </section>
 
-                <section className="showreel-section" >
+                <section className="showreel-section" id="showreel-sect">
                     <Showreel />
                 </section>
-                <section className="contacto-section" >
+                <section className="contacto-section" id="contacto-sect">
                     <Contacto />
                 </section>
                 <footer ref={sectionFooter}>
