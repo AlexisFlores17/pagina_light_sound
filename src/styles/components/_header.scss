@@ -8,9 +8,9 @@
 }
 
 header {
-  transition: all 10s !important;
   z-index: 10;
-  position: fixed;   
+  position: fixed;
+  width: 100%;     
   .container{
     width: 100%;
     max-width: inherit;
@@ -28,6 +28,13 @@ header {
       text-decoration: none;
       color: white;
     }
+  }
+  .links a{
+    font-size: 0.8rem;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    text-decoration: none;
   }
 }
 
