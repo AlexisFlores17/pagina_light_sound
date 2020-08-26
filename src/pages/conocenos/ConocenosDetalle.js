@@ -10,7 +10,7 @@ import mauro from '../../images/mauro.jpeg'
 import equipo from '../../images/equipo.jpg'
 
 const team = [
-	{name: "Alexis Flores", descripcion: "Director tecnológico, ", imagen: alex},
+	{name: "Alexis Flores", descripcion: "Director tecnológico y maestro pokémon", imagen: alex},
 	{name: "Alexis Guerrero", descripcion: "Director de interactividad y rockstar retirado.", imagen: destruido},
 	{name: "Diana Urquiza", descripcion: "Project Manager, directora de vinculación y organizadora compulsiva.", imagen: diana},
 	{name: "Lorenzo Torres", descripcion: "Director creativo, gurú del front-end y K-pop connoisseur.", imagen: lorenzo},	
