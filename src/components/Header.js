@@ -1,5 +1,5 @@
 import React from "react";
-import {ReactNavbar} from "react-responsive-animate-navbar";
+import { Link } from "react-scroll";
 
 
 
@@ -7,16 +7,18 @@ import {ReactNavbar} from "react-responsive-animate-navbar";
 const Header = ({ history}) => {
 
   return (
-    <ReactNavbar
-    className="navbar"
-    color="rgb(25, 25, 25)"
-    logo="https://svgshare.com/i/KHh.svg"
-    menu={[
-      { name: "Conocenos", to: "/" },
-      { name: "Showreel", to: "/articles" },
-      { name: "Contacto", to: "/about" },
-    ]}
-  />
+    <header >
+      <div className="container" id="header-pag">
+        <div className="wrapper">
+          <div className="inner-header">
+            <div className="logo">
+              <Link to="/">LSD LAB.</Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </header>
   );
 }
 
