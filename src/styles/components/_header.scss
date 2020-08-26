@@ -7,35 +7,14 @@
   display: none !important;
 }
 
-header {
-  z-index: 10;
-  position: fixed;
-  width: 100%;     
-  .container{
-    width: 100%;
-    max-width: inherit;
-    padding: 0 60px;
-  }
-  background-color: none;
-  .inner-header {    
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
-    .logo a {
-      font-weight: 700;
-      font-size: 1rem;
-      text-decoration: none;
-      color: white;
-    }
-  }
-  .links a{
-    font-size: 0.8rem;
-    color: white;
-    margin-left: 10px;
-    cursor: pointer;
-    text-decoration: none;
-  }
+.header-navbar {
+  z-index: 10 !important;
+  position: fixed !important;
+  width: 100vw!important;     
+}
+
+.navbar-container{
+  color: white;
 }
 
 

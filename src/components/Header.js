@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Navbar, Nav } from "react-bootstrap";
 
 
 
@@ -7,30 +7,19 @@ import { Link } from "react-scroll";
 const Header = ({ history}) => {
 
   return (
-    <header >
-      <div className="container" id="header-pag">
-        <div className="wrapper">
-          <div className="inner-header">
-            <div className="logo">
-              <Link to="/">LSD LAB.</Link>
-            </div>
-            <div className="links">              
-                <a href="#conocenos-sect">
-                  Conócenos       
-                </a>  
-                <a href="#showreel-sect">
-                  Showreel       
-                </a>  
-                <a href="#contacto-sect">
-                  Contacto       
-                </a>                                    
-                         
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </header>
+    <div className= "header-navbar">
+      <Navbar bg="none" expand="lg" variant="dark" className="navbar-container">
+        <Navbar.Brand href="#home">LSD LAB.</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav" inline>
+          <Nav className="mr-auto">
+            <Nav.Link href="#conocenos-sect">Conocenos</Nav.Link>
+            <Nav.Link href="#showreel-sect">Showreel</Nav.Link>
+            <Nav.Link href="#contacto-sect">Contacto</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </div>
   );
 }
 
