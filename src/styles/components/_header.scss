@@ -13,6 +13,13 @@
   width: 100vw!important;     
 }
 
+.navbar{
+  padding: 1rem 4rem;
+  @media(max-width: 375px){
+    padding: 1rem 2rem !important;
+  }
+}
+
 
 
   
