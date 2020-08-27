@@ -28,8 +28,7 @@ export const AppRoutes = () => {
                         <Footer />                     
                     </Route>
                     <Route path='/Contacto/info'>
-                        <ContactoDetalle />
-                        <Footer />                         
+                        <ContactoDetalle />                       
                     </Route>
                     <Route path='/'>
                         <PaginaPrincipal />                    
