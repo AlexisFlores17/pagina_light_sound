@@ -10,6 +10,7 @@ import { Contacto } from "./Contacto";
 import { Footer } from "./Footer";
 import useOnScreen from "../components/OnScreen";
 import Header from "../components/Header";
+import {Link} from 'react-router-dom'
 
 export const PaginaPrincipal = () => {
 
@@ -53,6 +54,12 @@ export const PaginaPrincipal = () => {
       gsap.to(app, 0, {css: {visibility: 'visible'}})//avoids flash    
     })
 
+    function scrollTop () {
+
+        window.scroll(0,0);
+    
+    }
+
     return (
             <div className="App" ref = {el => app = el}>
                 <div>
@@ -68,9 +75,11 @@ export const PaginaPrincipal = () => {
                     <Explore />
                 </section>
 
-                <section className="conocenos-section" id="conocenos-sect">
-                    <Conocenos />
-                </section>
+                <Link to="/Conocenos/info" onClick={scrollTop} style = {{textDecoration: "none"}}>
+                    <section className="conocenos-section" id="conocenos-sect">                    
+                            <Conocenos />                                    
+                    </section>
+                </Link>
 
                 <section className="showreel-section" id="showreel-sect">
                     <Showreel />
