@@ -33,16 +33,16 @@ export const Explore = () => {
                 <div className='explore-titulo col-sm-6 col-md-6 col-lg-6 col-xl-5'>
                     <nav className= "text-lg-left text-xl-left">
                         <ul>
-                        <li>
+                        <li className="lax" data-lax-translate-x="(vh/2) (vw/2), 0 0, (-vh/2) -600" data-lax-opacity="(vh/2) 0, 0 1, (-vh/2) 0" data-lax-anchor=".explore-container">
                             <Link onMouseEnter={e => handleHover(e)} onMouseOut={e => handleHoverExit(e)} to="/explore/Light">Light</Link>
                         </li>
-                        <li>
+                        <li className="lax" data-lax-translate-x="(vh/2) (vw/2), 0 0, (-vh/2) -500" data-lax-opacity="(vh/2) 0, 0 1, (-vh/2) 0" data-lax-anchor=".explore-container">
                             <Link onMouseEnter={e => handleHover(e)} onMouseOut={e => handleHoverExit(e)} to="/explore/Sound">& Sound</Link>
                         </li>
-                        <li>
+                        <li className="lax" data-lax-translate-x="(vh/2) (vw/2), 0 0, (-vh/2) -400" data-lax-opacity="(vh/2) 0, 0 1, (-vh/2) 0" data-lax-anchor=".explore-container">
                             <Link onMouseEnter={e => handleHover(e)} onMouseOut={e => handleHoverExit(e)} to="/explore/Disruptive">Disruptive</Link>
                         </li>
-                        <li>
+                        <li className="lax" data-lax-translate-x="(vh/2) (vw/2), 0 0, (-vh/2) -300" data-lax-opacity="(vh/2) 0, 0 1, (-vh/2) 0" data-lax-anchor=".explore-container">
                             <Link onMouseEnter={e => handleHover(e)} onMouseOut={e => handleHoverExit(e)} to="/explore/Lab">Lab</Link>
                         </li>
                         </ul>
