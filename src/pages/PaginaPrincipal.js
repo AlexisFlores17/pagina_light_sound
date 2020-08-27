@@ -19,7 +19,7 @@ export const PaginaPrincipal = () => {
     let app = useRef(null);
 
     const sectionHome = useRef();
-    const sectionExplore = useRef();
+    // const sectionExplore = useRef();
     // const sectionConocenos = useRef();
     // const sectionShowreel = useRef();
     // const sectionContacto = useRef();
@@ -65,7 +65,7 @@ export const PaginaPrincipal = () => {
                         <Home />
                     </section>
                 </div>
-                <section className="explore-section" id="explore-sect" ref={sectionExplore}>
+                <section className="explore-section" id="explore-sect" >
                     <Explore />
                 </section>
 
