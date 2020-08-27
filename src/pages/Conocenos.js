@@ -18,9 +18,12 @@ export const Conocenos = () => {
     return (
         <div className='conocenos-container-home'>
             <div className="scene">
-                <div className="magic lax" ref={el => magicEl = el} data-lax-opacity="(vh*1.5) 0,(vh*2) 1 , (vh*2.5) 1, (vh*3) 0 ">
-                    <div id="texto" className="lax" data-lax-opacity="-100px 0, 0 1, (-vh/2) 0" data-lax-anchor=".conocenos-container-home">Conócenos</div>
+                <div className="lax" data-lax-opacity="(vh*1.5) 0,(vh*2) 1 , (vh*2.5) 1, (vh*3) 0 ">
+                    <div className="magic" ref={el => magicEl = el} >
+                        <div id="texto" >Conócenos</div>
+                    </div>
                 </div>
+                
                 <h1>El equipo</h1>
                 <p>Somos un equipo de creadores, pensadores, exploradores y nerds tecnológicos. Nos enfocamos en nuestros proyectos con curiosidad y experimentación, usando todo lo que aprendemos para diseñar experiencias que conecten con personas como tú.</p>
             </div>            
