@@ -11,6 +11,7 @@ import { Footer } from "./Footer";
 import useOnScreen from "../components/OnScreen";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
+import { useLax } from 'use-lax';
 
 export const PaginaPrincipal = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -53,6 +54,8 @@ export const PaginaPrincipal = () => {
   function scrollTop() {
     window.scroll(0, 0);
   }
+
+  useLax();
 
   return (
     <div className="App" ref={(el) => (app = el)}>

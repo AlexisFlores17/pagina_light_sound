@@ -4,7 +4,6 @@ import { ExploreRoutes } from '../routes/ExploreRoutes'
 import {
     BrowserRouter as Router, Link,  
 }from 'react-router-dom';
-import { useLax, useLaxElement } from 'use-lax';
 
 
 export const Explore = () => {
@@ -26,14 +25,12 @@ export const Explore = () => {
     })
 
     } 
-    const ref = useLaxElement();
 
-    useLax();
 
     return (
 
         <Router>
-            <div  className="explore-container" ref={ref}>
+            <div  className="explore-container">
                 <div className='explore-titulo col-sm-6 col-md-6 col-lg-6 col-xl-5'>
                     <nav className= "text-lg-left text-xl-left">
                         <ul>
