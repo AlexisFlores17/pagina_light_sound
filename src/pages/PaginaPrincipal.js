@@ -11,13 +11,6 @@ import { Footer } from "./Footer";
 import useOnScreen from "../components/OnScreen";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
-import ScrollSnap from 'scroll-snap'
- 
-const snapConfig = {
-  snapDestinationX: '0%',
-  snapDestinationY: '90%',
-  timeout: 100,
-}
 
 export const PaginaPrincipal = () => {
   gsap.registerPlugin(ScrollTrigger);
