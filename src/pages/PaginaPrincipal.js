@@ -12,7 +12,9 @@ import useOnScreen from "../components/OnScreen";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
 import { useLax } from 'use-lax';
+import  lax  from 'lax.js';
 
+ 
 export const PaginaPrincipal = () => {
   gsap.registerPlugin(ScrollTrigger);
   gsap.registerPlugin(MotionPathPlugin);
@@ -56,6 +58,12 @@ export const PaginaPrincipal = () => {
   }
 
   useLax();
+
+
+  window.addEventListener("resize", function() {
+      lax.updateElements();    
+  });
+
 
   return (
     <div className="App" ref={(el) => (app = el)}>
