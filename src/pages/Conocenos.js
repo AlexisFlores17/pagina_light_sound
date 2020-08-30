@@ -18,7 +18,7 @@ export const Conocenos = () => {
     return (
         <div className='conocenos-container-home'>
             <div className="scene">
-                <div className="lax" data-lax-opacity="(vh*1.5) 0,(vh*2) 1 , (vh*2.5) 1, (vh*3) 0 ">
+                <div className="lax" data-lax-opacity="(vh*1.5) 0,(vh*1.8) 1 , (vh*2.5) 1, (vh*3) 0 ">
                     <div className="magic" ref={el => magicEl = el} >
                         <div id="texto" >Conócenos</div>
                     </div>
