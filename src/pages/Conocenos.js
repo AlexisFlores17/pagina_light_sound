@@ -24,8 +24,8 @@ export const Conocenos = () => {
                     </div>
                 </div>
                 
-                <h1>El equipo</h1>
-                <p>Somos un equipo de creadores, pensadores, exploradores y nerds tecnológicos. Nos enfocamos en nuestros proyectos con curiosidad y experimentación, usando todo lo que aprendemos para diseñar experiencias que conecten con personas como tú.</p>
+                <h1 className="lax" data-lax-translate-y="0 0vh, vh vh, (vh*2) 0, (vh*3) -vh">El equipo</h1>
+                <p className="lax" data-lax-translate-y="0 0vh, vh vh, (vh*2) 0, (vh*3) -vh">Somos un equipo de creadores, pensadores, exploradores y nerds tecnológicos. Nos enfocamos en nuestros proyectos con curiosidad y experimentación, usando todo lo que aprendemos para diseñar experiencias que conecten con personas como tú.</p>
             </div>            
         </div>
 

@@ -60,7 +60,7 @@ export const PaginaPrincipal = () => {
   return (
     <div className="App" ref={(el) => (app = el)}>
       <div>
-        {onScreenSectionHome && <Header />}
+        <Header />
 
         <section className="home-section" ref={sectionHome}>
           <Home />

@@ -6,7 +6,7 @@ export const Home = () => {
     return (
         <>
             <div className="home-video">
-                <video autoPlay muted loop className="myVideo" type="video/mp4" playsInline>
+                <video autoPlay muted loop className="myVideo lax" type="video/mp4" playsInline data-lax-opacity="0 1, vh 0.3, (vh*2) 0 ">
                     <source src={LSDbackground} />
                 </video>
             </div>
