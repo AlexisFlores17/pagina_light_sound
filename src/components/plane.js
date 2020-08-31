@@ -15,16 +15,10 @@ export default function Plane() {
   let filosofia = useRef(null)
   let mision = useRef(null)
 
-  const values = [
-    { x: 100, y: -30 },
-    { x: 300, y: 10 },
-    { x: 500, y: 100 },
-    { x: 750, y: -100 },
-    { x: 350, y: -50 },
-    { x: 600, y: 100 },
-    { x: 800, y: 0 },
-    { x: window.innerWidth, y: -250 }
-  ];
+  const w = window.innerWidth
+  
+
+
 
   useEffect(() => {
     let tl = gsap.timeline({
@@ -34,7 +28,7 @@ export default function Plane() {
         toggleActions:"play none none none",
         start:"",
         end: "bottom center",                      
-        markers: true,
+        
         scrub: true,
         pin: true,
         duration: '3000'
@@ -45,12 +39,12 @@ export default function Plane() {
     tl.to(planeImg, 1, {
       motionPath: {
         path: [
-          { x: 100, y: -30 },
-          { x: 300, y: 10 },
-          { x: 500, y: 100 },
-          { x: 750, y: -100 },
-          { x: 350, y: -50 },
-          { x: 600, y: 100 },          
+          { x: 0, y: 0},
+          { x: window.innerWidth * 0.1, y: 10 },
+          { x: window.innerWidth * 0.2, y: 100 },
+          { x: window.innerWidth * 0.4, y: -100 },
+          { x: window.innerWidth * 0.1, y: -50 },
+          { x: window.innerWidth * 0.3, y: 100 },          
           {x:window.innerWidth, y:-250},
         ],
         type: "cubic",

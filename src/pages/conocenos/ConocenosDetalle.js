@@ -10,37 +10,38 @@ import mauro from '../../images/mauro.jpeg'
 import Plane from '../../components/plane'
 
 const team = [
-	{name: "Alexis Flores", descripcion: "Director tecnológico y maestro pokémon", imagen: alex},
-	{name: "Alexis Guerrero", descripcion: "Director de interactividad y rockstar retirado.", imagen: destruido},
-	{name: "Diana Urquiza", descripcion: "Project Manager, directora de vinculación y organizadora compulsiva.", imagen: diana},
-	{name: "Lorenzo Torres", descripcion: "Director creativo, gurú del front-end y K-pop connoisseur.", imagen: lorenzo},	
-	{name: "Mijael Gutiérrez", descripcion: "Director general, Ing. acústico y nerd de audio del equipo.", imagen: mija},
-	{name: "Mauro Herrera", descripcion: "Director artístico, engendro de la deriva académica y no se concentra en una sola cosa.", imagen: mauro},
-	
+    {name: "Alexis Flores", descripcion: "Director tecnológico y maestro pokémon", imagen: alex},
+    {name: "Alexis Guerrero", descripcion: "Director de interactividad y rockstar retirado.", imagen: destruido},
+    {name: "Diana Urquiza", descripcion: "Project Manager, directora de vinculación y organizadora compulsiva.", imagen: diana},
+    {name: "Lorenzo Torres", descripcion: "Director creativo, gurú del front-end y K-pop connoisseur.", imagen: lorenzo},   
+    {name: "Mijael Gutiérrez", descripcion: "Director general, Ing. acústico y nerd de audio del equipo.", imagen: mija},
+    {name: "Mauro Herrera", descripcion: "Director artístico, engendro de la deriva académica y no se concentra en una sola cosa.", imagen: mauro},
+    
 ]
 
 export const ConocenosDetalle = () => {
     return (
-
-        <>   
-            
-            <Plane/>
-
-            <section className="team">
-                <div className="container">
-                    <div className="row" id="foto-conocenos">			
-                        {team.map((member) =>
-                            <div key={member.name} className="col-12 col-md-6 col-lg-4">
-                                <TeamMember name={member.name} descripcion={member.descripcion} imagen = {member.imagen}/>
-                            </div>
-                        )}
+        <Reveal effect="fadeindown" duration={2000}>
+            <div className="conocenos-container" >
+                	
+                <Plane/>
                         
-                    </div>
+            </div>
+    
+            <div className="container">
+                <div className="row" id="foto-conocenos">			
+                    {team.map((member) =>
+                        <div key={member.name} className="col-12 col-md-6 col-lg-4">
+                            <TeamMember name={member.name} descripcion={member.descripcion} imagen = {member.imagen}/>
+                        </div>
+                    )}
                     
                 </div>
                 
-            </section>
-              
-        </>
+            </div>
+        
+        </Reveal>
+            
+        
         )  
     }
