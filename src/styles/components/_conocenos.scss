@@ -1,18 +1,9 @@
 
-.conocenos-section{
-    // background-image: url('../../images/pexels-fox-1595385.jpg');
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
+.conocenos-section{    
     cursor:none;
-    // background-image: linear-gradient( -45deg,#99004d	 0%, #4c0099 100% );
     background-image: linear-gradient( -45deg, #9b23ea 0%, $purple 100%);
-
-    
-    
     overflow: hidden;
-    text-decoration-line: none
-    
+    text-decoration-line: none    
   }
 
   
@@ -51,41 +42,10 @@
     }
   
     
-    .content{    
-      width: 80%;
-      margin: 0 auto;
-      font-weight: 100;
-      
-      .description{
-        margin-bottom: 40px;  
-        margin-top: 10%;
-      }
-      h2{
-        font-weight: 300;
-        margin-bottom: 40px; 
-        text-decoration: none; 
-      }
-      p{      
-        margin-bottom: 40px;  
-      }
-      
-    }
   }
 
   
 //conocenos detalle
-
-.conocenos-div-img{
-  overflow: hidden;
-  height: 400px;
-  position: relative;
-  text-align: center;
-    img{
-      position:relative;
-      width: 100%;
-      top: 20px;
-    }
-}
 
 .conocenos-container{
   color: white;
@@ -112,9 +72,11 @@
     
   }
 }
-
-
-
+section{
+  height: 100vh;
+  
+  
+}
 //teamMember
 .teamMember-container{
   margin-bottom: 50px;
