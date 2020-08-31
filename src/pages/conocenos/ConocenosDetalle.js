@@ -7,7 +7,6 @@ import Reveal from "react-reveal/Fade";
 import diana from '../../images/diana.jpeg'
 import mija from '../../images/mija.jpeg'
 import mauro from '../../images/mauro.jpeg'
-import equipo from '../../images/equipo.jpg'
 import Plane from '../../components/plane'
 
 const team = [
@@ -22,7 +21,9 @@ const team = [
 
 export const ConocenosDetalle = () => {
     return (
-        <>        
+
+        <>   
+            
             <Plane/>
 
             <section className="team">
