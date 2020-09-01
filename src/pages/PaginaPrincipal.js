@@ -51,6 +51,11 @@ export const PaginaPrincipal = () => {
 
   useEffect(() => {
     gsap.to(app, 0, { css: { visibility: "visible" } }); //avoids flash
+
+    window.addEventListener("resize", function() {
+      lax.updateElements();    
+    });
+
   });
 
   function scrollTop() {
@@ -58,11 +63,6 @@ export const PaginaPrincipal = () => {
   }
 
   useLax();
-
-
-  window.addEventListener("resize", function() {
-      lax.updateElements();    
-  });
 
 
   return (
