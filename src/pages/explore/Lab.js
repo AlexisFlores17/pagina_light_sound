@@ -1,10 +1,10 @@
 import React from "react";
-import Reveal from "react-reveal/Fade";
+import Fade from "react-reveal/Fade";
 
 function Lab() {
  
   return (
-    <Reveal effect="fadeInUp">
+    <Fade bottom cascade>
       <h5>
         <p className="selected">
           Proyectos Personalizados
@@ -16,7 +16,7 @@ function Lab() {
           Drones
         </p>   
       </h5>
-    </Reveal>         
+    </Fade>        
   );
 }
 
