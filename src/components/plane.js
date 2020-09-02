@@ -58,7 +58,7 @@ export default function Plane() {
     }, 'start')
 
     tl.to(filosofia, {
-      duration: 100, 
+      duration: 500, 
       css: {opacity: "1"},            
       ease: 'power3.inOut',
          
