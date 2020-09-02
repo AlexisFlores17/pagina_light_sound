@@ -1,6 +1,7 @@
 .contacto-section {
   overflow: hidden;
   height: 100vh;
+  background-color: #eaebed;
 }
 
 .contacto-div {
@@ -10,27 +11,36 @@
 }
 
 #contacto-left {
-  background-color: #eaebed;
+  vertical-align: top;
+  font-family: 'Montserrat', sans-serif !important;
+  h1{
+    font-weight: 600;
+    font-size: 4rem;
+    margin-top: 10%;
+    text-align: left;
+    padding: 0 20px;
+  }
+  h5{
+    margin-top: 10%;
+    text-align: left;
+    padding: 0 20px;
+    font-size: 1.5rem;
+  }
 }
 
 #contacto-right {
-  background-image: url("./../../images/contacto2.jpg");
+  background-image: url("./../../images/contacto2.png");
   background-size: auto 100vh;
   background-position-x: left;
+  background-position-y: top;
 }
-
-//contacto detalle
 
 .contacto-div-top {
   overflow: hidden;
-  height: 500px;
+  height: 100%;
   position: relative;
   text-align: center;
-  img {
-    position: relative;
-    width: 100%;
-    top: -10px;
-  }
+  
 }
 .contacto-quote {
   padding-top: 50px;
@@ -45,71 +55,4 @@
   font-size: 26px;
 }
 
-.contacto-content {
-  margin-top: 100px;
-  padding: 20px;
-  display: flex;
-}
 
-.contacto-info {
-  position: relative;
-  color: white;
-  width: 50%;
-}
-
-.social-icons-contacto {
-  padding-top: 100px;
-  align-content: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  .icon {
-    border-radius: 50%;
-    border: solid;
-    border-width: 1px;
-    border-color: white;
-    color: white;
-    transition-duration: 300ms;
-    &:hover {
-      background-color: #990099;
-    }
-    width: 3rem;
-    height: 3rem;
-    position: relative;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    .icon-text {
-      font-weight: 300;
-      font-size: 12px;
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .contacto-div-top {
-    height: 300px;
-  }
-  .contacto-content {
-    margin-top: 0;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column-reverse;
-  }
-
-  .contacto-img {
-    margin: 0 auto;
-    position: relative;
-    top: 85px;
-  }
-
-  .contacto-info {
-    margin: 0 auto;
-    align-content: center;
-    justify-content: center;
-  }
-}
