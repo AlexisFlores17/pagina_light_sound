@@ -1,12 +1,12 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 import ReactPlayer from 'react-player';
 
-function scrollTop () {
+// function scrollTop () {
 
-    window.scroll(0,0);
+//     window.scroll(0,0);
 
-}
+// }
 
 export const Showreel = () => {
     return (

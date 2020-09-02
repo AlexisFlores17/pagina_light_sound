@@ -62,7 +62,7 @@ export const PaginaPrincipal = () => {
     window.scroll(0, 0);
   }
 
-  // useLax();
+  useLax();
 
 
   return (

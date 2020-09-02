@@ -15,7 +15,7 @@ export default function Plane() {
   let filosofia = useRef(null)
   let mision = useRef(null)
 
-  const w = window.innerWidth
+  // const w = window.innerWidth
   
 
 
@@ -28,8 +28,8 @@ export default function Plane() {
         ease: "power1.easeInOut",
         toggleActions:"play none none none",
         start:"",
-        end: "+=10000",
-        markers: true,
+        end: "+=2500",
+        markers: false,
         scrub: true,
         pin: true,        
       }

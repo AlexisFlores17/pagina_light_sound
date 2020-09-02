@@ -3,7 +3,7 @@ import TeamMember from '../../components/TeamMember'
 import destruido from '../../images/destruido300.JPG'
 import lorenzo from '../../images/lorenzo300.png'
 import alex from '../../images/alex300.JPG'
-import Reveal from "react-reveal/Fade";
+// import Reveal from "react-reveal/Fade";
 import diana from '../../images/diana.jpeg'
 import mija from '../../images/mija.jpeg'
 import mauro from '../../images/mauro.jpeg'

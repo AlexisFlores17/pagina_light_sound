@@ -6,8 +6,8 @@ import gsap from 'gsap'
 export const Conocenos = () => {
     let magicEl = useRef(null)
 
-    let cursor = useRef(null)
-    let follower = useRef(null)
+    // let cursor = useRef(null)
+    // let follower = useRef(null)
 
     useEffect(() => {
         var magic = magicEl
