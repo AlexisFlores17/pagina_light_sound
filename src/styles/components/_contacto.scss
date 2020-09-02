@@ -1,106 +1,118 @@
+.contacto-section {
+  
+  height: 100vh;
 
-.contacto-section{
-    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
-    
-  }
+}
 
-  //contacto detalle
+.contacto-div{
+  height: 100vh;
+  width: 50vw;
+  display: inline-block;
+}
 
-  .contacto-div-top{
-    overflow: hidden;
-    height: 500px;
+#contacto-left{
+  background-color: #eaebed;
+}
+
+#contacto-right{
+  background-image: url("./../../images/contacto2.jpg");
+  background-size: auto 100vh;
+  background-position-x: left;
+}
+
+
+
+//contacto detalle
+
+.contacto-div-top {
+  overflow: hidden;
+  height: 500px;
+  position: relative;
+  text-align: center;
+  img {
     position: relative;
-    text-align: center;
-      img{
-        position: relative;
-        width: 100%;
-        top:-10px;
-      }
+    width: 100%;
+    top: -10px;
   }
-  .contacto-quote{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: rgba(0,0,0,0.3);
+}
+.contacto-quote {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 26px;
+}
+
+.contacto-content {
+  margin-top: 100px;
+  padding: 20px;
+  display: flex;
+}
+
+.contacto-info {
+  position: relative;
+  color: white;
+  width: 50%;
+}
+
+.social-icons-contacto {
+  padding-top: 100px;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  .icon {
+    border-radius: 50%;
+    border: solid;
+    border-width: 1px;
+    border-color: white;
     color: white;
-    width: 1000px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 26px;
-  
-  }
-  
-  .contacto-content{
-    margin-top:100px ;
-    padding: 20px;
-    display: flex;
-  }
-  
-  .contacto-info{
+    transition-duration: 300ms;
+    &:hover {
+      background-color: #990099;
+    }
+    width: 3rem;
+    height: 3rem;
     position: relative;
-    color:white;
-    width: 50%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    .icon-text {
+      font-weight: 300;
+      font-size: 12px;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contacto-div-top {
+    height: 300px;
+  }
+  .contacto-content {
+    margin-top: 0;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column-reverse;
   }
 
-  .social-icons-contacto{ 
-    padding-top: 100px;
+  .contacto-img {
+    margin: 0 auto;
+    position: relative;
+    top: 85px;
+  }
+
+  .contacto-info {
+    margin: 0 auto;
     align-content: center;
-    display:flex;
     justify-content: center;
-    flex-direction: row;
-      .icon{    
-        border-radius: 50%;
-        border: solid;
-        border-width: 1px;
-        border-color: white;
-        color: white;
-        transition-duration: 300ms;
-        &:hover{
-          background-color: #990099;
-          
-        }
-        width: 3rem;
-        height: 3rem;
-        position: relative;  
-        margin-left: 1rem;  
-        margin-right: 1rem;  
-        .icon-text{
-          
-          font-weight: 300;
-          font-size: 12px;
-          margin: 0;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-      }
-    }
-  
-    @media  (max-width: 768px){
-      .contacto-div-top{
-        height: 300px;
-      }
-      .contacto-content{
-        margin-top:0;
-        align-content: center;
-        justify-content: center;
-        flex-direction: column-reverse;
-      }
-      
-  
-      .contacto-img{
-        margin: 0 auto;
-        position: relative;
-        top: 85px;
-       
-      }
-  
-      .contacto-info{
-        margin: 0 auto;
-        align-content: center;
-        justify-content: center;
-      }
-    }
-  
+  }
+}

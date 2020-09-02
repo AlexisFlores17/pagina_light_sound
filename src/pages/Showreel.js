@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import ReactPlayer from 'react-player';
 
 function scrollTop () {
 
@@ -10,11 +11,15 @@ function scrollTop () {
 export const Showreel = () => {
     return (
         <div className='showreel-container'>
-            <div>
-                <h1>Titulo Showreel</h1>
-                <p>Consectetur et excepteur ullamco consequat. Deserunt duis id duis amet non non sint. Fugiat pariatur ullamco eiusmod esse sit anim ea reprehenderit commodo anim et ipsum sunt est. Ex laborum ad nisi mollit irure.</p>
-            </div>
-            <Link to="/Showreel/info" onClick={scrollTop}>Ver mas</Link>
+        <div className='player-wrapper'>
+          <ReactPlayer
+            className='react-player'
+            url="https://player.vimeo.com/video/189176993"
+            width='100vw'
+            height='100vh'
+            controls={true}
+          />
+        </div>
         </div>
     )
 }
