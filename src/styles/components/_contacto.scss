@@ -1,26 +1,23 @@
 .contacto-section {
-  
+  overflow: hidden;
   height: 100vh;
-
 }
 
-.contacto-div{
+.contacto-div {
   height: 100vh;
   width: 50vw;
   display: inline-block;
 }
 
-#contacto-left{
+#contacto-left {
   background-color: #eaebed;
 }
 
-#contacto-right{
+#contacto-right {
   background-image: url("./../../images/contacto2.jpg");
   background-size: auto 100vh;
   background-position-x: left;
 }
-
-
 
 //contacto detalle
 
