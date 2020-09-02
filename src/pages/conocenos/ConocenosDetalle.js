@@ -21,7 +21,7 @@ const team = [
 
 export const ConocenosDetalle = () => {
     return (
-        <Reveal effect="fadeindown" duration={2000}>
+        <>
             <div className="conocenos-container" >
                 	
                 <Plane/>
@@ -40,7 +40,7 @@ export const ConocenosDetalle = () => {
                 
             </div>
         
-        </Reveal>
+        </>
             
         
         )  

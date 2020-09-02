@@ -22,21 +22,22 @@ export default function Plane() {
 
   useEffect(() => {
     let tl = gsap.timeline({
+      duration: 10,
       scrollTrigger: {
         trigger: ".animation",                
         ease: "power1.easeInOut",
         toggleActions:"play none none none",
         start:"",
-        end: "bottom center",                      
-        
+        end: "+=10000",
+        markers: true,
         scrub: true,
-        pin: true,
-        duration: '3000'
+        pin: true,        
       }
     })
     
     
-    tl.to(planeImg, 1, {
+    tl.to(planeImg, 1000, {
+      duration: 500, 
       motionPath: {
         path: [
           { x: 0, y: 0},
@@ -57,14 +58,14 @@ export default function Plane() {
     }, 'start')
 
     tl.to(filosofia, {
-      duration: 1, 
+      duration: 500, 
       css: {opacity: "1"},            
       ease: 'power3.inOut',
          
     }, 'start')
      
     tl.to(mision, {
-      duration: 1, 
+      duration: 500, 
       css: {opacity: "1"},
       y: 100,
       delay: 0.1,
