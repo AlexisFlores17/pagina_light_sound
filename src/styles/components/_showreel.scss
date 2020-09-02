@@ -1,22 +1,21 @@
 
 
 .showreel-section{
-    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
-    
+    background-image: black;
+    overflow: hidden;
   }
 
   //Showreel detalle
 
+  .player-wrapper {
+    width: 100vw; // Reset width
+    height: 100vh; // Reset height
+  }
+  .react-player {
+    // padding-top: 56.25%; // Percentage ratio for 16:9
+    position: relative; // Set to relative
+  }
   
-
-.player-wrapper {
-  position: relative;
-  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
-}
- 
-.react-player {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-}
+  .react-player > div {
+    position: absolute; // Scaling will occur since parent is relative now
+  }

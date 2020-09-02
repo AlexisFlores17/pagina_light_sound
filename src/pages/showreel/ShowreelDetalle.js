@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player';
 
 export const ShowreelDetalle = () => {
     return (
-        <div className='player-wrapper'>
+        <div className='player-wrapper col-12'>
           <ReactPlayer
             className='react-player'
             url="https://player.vimeo.com/video/189176993"
