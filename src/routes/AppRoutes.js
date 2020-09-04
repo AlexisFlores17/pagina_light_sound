@@ -8,7 +8,7 @@ import {
 import { PaginaPrincipal } from '../pages/PaginaPrincipal'
 import { ConocenosDetalle } from '../pages/conocenos/ConocenosDetalle'
 import { Footer } from '../pages/Footer'
-import Header from '../components/Header'
+import Header2 from '../components/Header2'
 
 
 
@@ -59,7 +59,7 @@ export const AppRoutes = () => {
             <div>                
                 <Switch>
                     <Route path='/Conocenos/info'>
-                        <Header/>     
+                        <Header2 />     
                         <ConocenosDetalle />    
                         <Footer />                       
                     </Route>
