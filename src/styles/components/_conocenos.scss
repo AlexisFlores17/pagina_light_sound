@@ -13,7 +13,7 @@
       font-weight: 700;
       font-size: 150px;
       text-align: right;
-      width: 100vw;
+
       @media(max-width: 370px){
         font-size: 160px !important;
         text-align: center !important;
@@ -28,7 +28,6 @@
     p{
       margin-top: 15vh;
       font-size: 25px;
-      width: 60vh;
       text-align: start;
       margin-left: 10vw;
       @media(max-width: 375px){
