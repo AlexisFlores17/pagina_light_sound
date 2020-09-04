@@ -7,12 +7,13 @@ import { Explore } from "./Explore";
 import { Conocenos } from "./Conocenos";
 import { Showreel } from "./Showreel";
 import { Contacto } from "./Contacto";
-import { Footer } from "./Footer";
+// import { Footer } from "./Footer";
 import useOnScreen from "../components/OnScreen";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
 import { useLax } from 'use-lax';
 import  lax  from 'lax.js';
+import { FooterMain } from "./FooterMain";
 
  
 export const PaginaPrincipal = () => {
@@ -26,13 +27,13 @@ export const PaginaPrincipal = () => {
   // const sectionConocenos = useRef();
   // const sectionShowreel = useRef();
   // const sectionContacto = useRef();
-  const sectionFooter = useRef();
+  // const sectionFooter = useRef();
 
-  let footerMostrado = false;
+  // let footerMostrado = false;
 
   const onScreenSectionHome = useOnScreen(sectionHome, "-50%");
   //const onScreenSectionExplore = useOnScreen(sectionExplore, "-20%");
-  const onScreenSectionFooter = useOnScreen(sectionFooter, "-20px");
+  // const onScreenSectionFooter = useOnScreen(sectionFooter, "-20px");
 
   if (onScreenSectionHome) {
     document.getElementsByTagName("HTML")[0].style.scrollBehavior = "smooth";
@@ -40,14 +41,14 @@ export const PaginaPrincipal = () => {
     document.getElementsByTagName("HTML")[0].style.scrollBehavior = "unset";
   }
 
-  if (onScreenSectionFooter && footerMostrado === false) {
-    footerMostrado = true;
-    document.getElementById("hagamos").classList.add("glow");
-    document.getElementById("contacto-animacion").classList.add("glow");
-    document.getElementById("numero-animar").classList.add("glowInf");
-    document.getElementById("correo-animar").classList.add("glowInf");
-    document.getElementById("copy-animacion").classList.add("glowInf");
-  }
+  // if (onScreenSectionFooter && footerMostrado === false) {
+  //   footerMostrado = true;
+  //   document.getElementById("hagamos").classList.add("glow");
+  //   document.getElementById("contacto-animacion").classList.add("glow");
+  //   document.getElementById("numero-animar").classList.add("glowInf");
+  //   document.getElementById("correo-animar").classList.add("glowInf");
+  //   document.getElementById("copy-animacion").classList.add("glowInf");
+  // }
 
   useEffect(() => {
     gsap.to(app, 0, { css: { visibility: "visible" } }); //avoids flash
@@ -94,9 +95,9 @@ export const PaginaPrincipal = () => {
       <section className="contacto-section" id="contacto-sect">
         <Contacto />
       </section>
-      <footer ref={sectionFooter}>
-        <Footer />
-      </footer>
+      
+      <FooterMain />
+      
     </div>
   );
 };

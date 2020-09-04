@@ -1,6 +1,6 @@
 import React from 'react';
 import LSDbackground from '../video/backgroundweb.mp4';
-import arrow from '../images/arrow-right.svg';
+// import arrow from '../images/arrow-right.svg';
 
 export const Home = () => {
     return (
