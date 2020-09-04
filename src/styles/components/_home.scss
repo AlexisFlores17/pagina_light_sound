@@ -109,6 +109,76 @@ html{
   }
 }
 
+#scroll-down-animation{
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  
+  .scroll-animation{
+    border: 2px solid #555;
+    width: 30%;
+    margin: 0 auto;
+    animation: sc-animation 2.5s infinite ease;
+  }
+  #sa-1{
+    margin-top: 20%;
+    border-radius: 50% 50% 0 0;
+    border-bottom: none;
+  }
+  #sa-1, #sa-3{
+    height: 25%;
+  }
+  #sa-2{
+    height: 10%;
+    border-top: none;
+    border-bottom: none;
+  }
+  #sa-3{
+    border-top: none;
+    border-radius: 0 0 50% 50%;
+  }
+  #sc-circle{
+    width: 8px;
+    height: 8px;
+    margin: 160% auto 0 auto;
+    background-color: white;
+    border-radius: 50%;
+    animation: sc-circle 2s infinite ease;
+  }
+
+}
+
+@keyframes sc-animation{
+  0%{
+    border-color: #000;
+  }
+  50%{
+    border-color: #555;
+  }
+  100%{
+    border-color: #000;
+  }
+}
+
+@keyframes sc-circle{
+  0%{
+    opacity: 0;
+    margin-top: 160%;
+  }
+  20%{
+    opacity: 0.3;
+  }
+  70%{
+    margin-top: 20%;
+    opacity: 1;
+  }
+  100%{
+    margin-top: 10%;
+    opacity: 0;
+  }
+}
+
 ///Responsive
 
 // MD screen size

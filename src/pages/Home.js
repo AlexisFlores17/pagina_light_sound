@@ -15,7 +15,8 @@ export const Home = () => {
                 <h5 className="animate__animated animate__fadeInUp animate__slow">
                     Retamos el sentido de lo establecido con propuestas innovadoras en ciencia, arte y tecnología
                 </h5>   
-                <div className="btn-row animate__animated animate__fadeIn animate__delay-2s ">
+                
+                {/* <div className="btn-row animate__animated animate__fadeIn animate__delay-2s ">
                     <button className="explore-button" >Explore
                         <a href="#explore-sect">
                             <div className="arrow-icon" >
@@ -23,8 +24,17 @@ export const Home = () => {
                             </div>
                         </a>
                     </button>                 
-                </div>             
-            </div>   
+                </div>              */}
+            </div>  
+            <div id="scroll-down-animation" className="lax" data-lax-opacity=" 0 1, (vh/10) 0 ">
+                <span>
+                    <div className="scroll-animation" id="sa-1">
+                        <div id="sc-circle"></div>
+                    </div>
+                    <div className="scroll-animation" id="sa-2"></div>
+                    <div className="scroll-animation" id="sa-3"></div>
+                </span>
+            </div> 
         </>
     )
 }
