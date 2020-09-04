@@ -8,6 +8,7 @@
 
   .conocenos-texto{
     font-family: 'Montserrat', sans-serif !important;
+    overflow: hidden;
   }
 
   .titulo-conocenos{
@@ -29,7 +30,7 @@
   .triangulo{
     margin-top: 20vh;
     margin-left: 65vw;
-
+    overflow: hidden;
     width: 800px;
     height: 800px;
     background: rgba(0,0,0,0.3);
@@ -37,6 +38,7 @@
 }
 
 .circulo {
+  overflow: hidden;
   margin-top: -120vh;
   margin-left: -10vw;
   width: 800px;
