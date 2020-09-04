@@ -17,12 +17,31 @@
   }
 
   .informacion-conocenos{
-    margin-top: 20vh;
     font-size: 25px;
     text-align: start;
-    margin-right: 20vw;
-  }
+    margin-top: 20vh;
+    margin-right:30vw ;
     
+  }
+.figuras{
+  position: absolute;
+}
+  .triangulo{
+    margin-top: 70vh;
+    margin-left: 75vw;
+
+    border-top: 200px solid transparent;
+    border-left: 200px solid rgba(0,0,0,0.4)
+}
+
+.circulo {
+  margin-top: -70vh;
+  margin-left: 15vw;
+  width: 200px;
+  height: 200px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 1000px;
+}
   .conocenos-container-home{
     color: white;
     text-align: center;

@@ -57,6 +57,11 @@ export const Conocenos = () => {
     
     return (
         <div className='conocenos-container-home'>
+            <div className="figuras">
+                <div className="triangulo"></div>
+                <div className="circulo"></div>
+            </div>
+
             <div className="scene">
                 <div className="lax" data-lax-opacity="(vh*1.5) 0,(vh*1.8) 1 , (vh*2.5) 1, (vh*3) 0 ">
                     
