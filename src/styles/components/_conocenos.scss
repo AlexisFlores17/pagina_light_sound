@@ -128,3 +128,65 @@ section{
   }
 
 }
+
+#sa-conocenos{
+  position: fixed;
+  background-color: #555;
+  width: 1px;
+  height: 10%;
+  z-index: 10;
+  top: 20%;
+  right: 50%;
+  animation: sc-anim 3s ease-in-out infinite ;
+}
+
+@keyframes sc-anim{
+  0%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 1;
+  }
+  70%{
+    height: 60%;
+    opacity: 1;
+  }
+  100%{
+    height: 60%;
+    opacity: 0;
+  }
+}
+
+#sa-flecha{
+  position: fixed;
+  width: 5vh;
+  height: 5%;
+  bottom: 65%;
+  left: 50%;
+  transform: translate(-50%, 0) rotate(45deg);
+  border: 1px solid #555;
+  border-top: none;
+  border-left: none;
+  animation: sc-arrow 3s ease-in-out infinite ;
+
+}
+
+@keyframes sc-arrow{
+  0%{
+    opacity: 0;
+    bottom: 65%;
+  }
+  20%{
+    opacity: 1;
+  }
+  70%{
+    bottom: 10%;
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    bottom: 5%;
+  }
+}
+
+
