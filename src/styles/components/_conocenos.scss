@@ -27,21 +27,24 @@
   position: absolute;
 }
   .triangulo{
-    margin-top: 70vh;
-    margin-left: 75vw;
+    margin-top: 20vh;
+    margin-left: 65vw;
 
-    border-top: 200px solid transparent;
-    border-left: 200px solid rgba(0,0,0,0.4)
+    width: 800px;
+    height: 800px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 1000px;
 }
 
 .circulo {
-  margin-top: -70vh;
-  margin-left: 15vw;
-  width: 200px;
-  height: 200px;
-  background: rgba(0,0,0,0.4);
+  margin-top: -120vh;
+  margin-left: -10vw;
+  width: 800px;
+  height: 800px;
+  background: rgba(0,0,0,0.2);
   border-radius: 1000px;
 }
+
   .conocenos-container-home{
     color: white;
     text-align: center;
