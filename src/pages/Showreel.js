@@ -14,7 +14,7 @@ export const Showreel = () => {
         <div className='player-wrapper'>
           <ReactPlayer
             className='react-player'
-            url="https://player.vimeo.com/video/189176993"
+            url="https://vimeo.com/454591343"
             width='100vw'
             height='100vh'
             controls={true}
