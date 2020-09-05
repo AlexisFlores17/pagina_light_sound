@@ -63,3 +63,37 @@
     color: white;
 }
 
+.explore-option{
+  animation: ex-animation 2500ms ease-in-out infinite ;
+}
+
+.ex-p2 {
+  animation-delay: 500ms;
+}
+
+.ex-p3{
+  animation-delay: 1000ms;
+}
+
+.ex-p4{
+  animation-delay: 1500ms;
+}
+
+@keyframes ex-animation{
+  0%{
+    translate: 0 0;
+  }
+  50%{
+    translate: 0 -10px;
+  }
+  55%{
+    translate: 0 0px;
+  }
+  60%{
+    translate: 0 -5px;
+  }
+  65%{
+    translate: 0 0px;
+  }
+}
+

@@ -46,7 +46,7 @@ export default function Plane() {
           { x: window.innerWidth * 0.4, y: -100 },
           { x: window.innerWidth * 0.1, y: -50 },
           { x: window.innerWidth * 0.3, y: 100 },          
-          {x:window.innerWidth * 0.6, y: -150},
+          {x: window.innerWidth - 100, y: -window.innerHeight /2},
         ],
         type: "cubic",
         curviness: 1.25,

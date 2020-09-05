@@ -31,15 +31,15 @@ export const PaginaPrincipal = () => {
 
   // let footerMostrado = false;
 
-  const onScreenSectionHome = useOnScreen(sectionHome, "-50%");
+  // const onScreenSectionHome = useOnScreen(sectionHome, "-50%");
   //const onScreenSectionExplore = useOnScreen(sectionExplore, "-20%");
   // const onScreenSectionFooter = useOnScreen(sectionFooter, "-20px");
 
-  if (onScreenSectionHome) {
-    document.getElementsByTagName("HTML")[0].style.scrollBehavior = "smooth";
-  } else {
-    document.getElementsByTagName("HTML")[0].style.scrollBehavior = "unset";
-  }
+  // if (onScreenSectionHome) {
+  //   document.getElementsByTagName("HTML")[0].style.scrollBehavior = "smooth";
+  // } else {
+  //   document.getElementsByTagName("HTML")[0].style.scrollBehavior = "unset";
+  // }
 
   // if (onScreenSectionFooter && footerMostrado === false) {
   //   footerMostrado = true;
