@@ -14,13 +14,23 @@
   .titulo-conocenos{
     font-weight: 700;
     font-size: 150px;
-    text-align: right;
+    text-align: right;    
+    @media(max-width: 375px){
+      font-size: 70px !important;
+      text-align: center!important; 
+    }
   }
 
   .informacion-conocenos{
     font-size: 25px;
     text-align: start;
-  
+
+    @media(max-width: 375px){
+      margin-top:100px;
+      font-size: 15px !important;
+      text-align: center!important; 
+    }
+
   }
 .figuras{
   position: absolute;
