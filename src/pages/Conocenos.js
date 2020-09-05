@@ -74,7 +74,7 @@ export const Conocenos = () => {
                     <h1 className="lax titulo-conocenos" data-lax-translate-y="0 0vh, vh vh, (vh*1.8) 0 " data-lax-opacity=" (vh*2) 1 , (vh*3) 0 ">El equipo</h1>
                     <p className="lax informacion-conocenos" data-lax-translate-y="0 0vh, vh vh, (vh*1.8) 0 " data-lax-opacity=" (vh*2) 1 , (vh*3) 0 ">Somos un equipo de creadores, pensadores, exploradores y nerds tecnológicos. Nos enfocamos en nuestros proyectos con curiosidad y experimentación, usando todo lo que aprendemos para diseñar experiencias que conecten con personas como tú.</p>
                 </div>
-                <div className="boton-conocenos">Conócenos</div>
+                <div className="boton-conocenos">Presiona para conocernos</div>
             </div>            
         </div>
 
