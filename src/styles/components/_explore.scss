@@ -64,30 +64,33 @@
 }
 
 .explore-option{
-  animation: ex-animation 1.5s ease-in-out infinite ;
+  animation: ex-animation 4s ease-in-out infinite ;
 }
 
 .ex-p2 {
-  animation-delay: 400ms;
+  animation-delay: 1000ms;
 }
 
 .ex-p3{
-  animation-delay: 800ms;
+  animation-delay: 2000ms;
 }
 
 .ex-p4{
-  animation-delay: 1200ms;
+  animation-delay: 3000ms;
 }
 
 @keyframes ex-animation{
   0%{
-    opacity: 0.5;
+    opacity: 1;
   }
-  80%{
+  13%{
+    opacity: 0.3;
+  }
+  25%{
     opacity: 1;
   }
   100%{
-    opacity: 0.5;
+    opacity: 1;
   }
 }
 
