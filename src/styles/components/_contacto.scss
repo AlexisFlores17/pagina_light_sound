@@ -8,6 +8,12 @@
   height: 100vh ;
   width: 49.4vw ;
   display: inline-block ;
+  @media(max-width: 380px){
+    display: flex;
+    flex-direction: column;
+    width: 100vw ;
+    height: 70vh ;
+  }
 }
 
 #contacto-left {
@@ -28,6 +34,25 @@
     padding: 0 20px;
     font-size: 1.5rem;
   }
+  @media(max-width: 380px){
+    vertical-align: center ;
+    height: 50%;
+    h1{
+      font-weight: 600;
+      font-size: 2rem;
+      margin-top: 10%;
+      text-align: left;
+      padding: 0 20px;
+      
+    }
+    h5{
+      margin-top: 10%;
+      text-align: left;
+      padding: 0 20px;
+      font-size: 1rem;
+    }
+  }
+  
 }
 
 #contacto-right {
@@ -35,6 +60,8 @@
   background-size: auto 100vh;
   background-position-x: left;
   background-position-y: top;
+  
+
 }
 
 .contacto-div-top {
@@ -42,6 +69,10 @@
   height: 100%;
   position: relative;
   text-align: center;
+  @media(max-width: 380px){
+    height: 50%;
+    
+  }
   
 }
 .contacto-quote {
@@ -55,4 +86,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 26px;
+
+  @media(max-width: 380px){
+    width: 500px;
+    top: 70%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
