@@ -20,16 +20,14 @@
   .informacion-conocenos{
     font-size: 25px;
     text-align: start;
-    margin-top: 20vh;
-    margin-right:30vw ;
-    
+  
   }
 .figuras{
   position: absolute;
 }
   .triangulo{
-    margin-top: 20vh;
-    margin-left: 65vw;
+    margin-left: 700px;
+    margin-top: 0vh;
     overflow: hidden;
     width: 800px;
     height: 800px;
@@ -39,8 +37,8 @@
 
 .circulo {
   overflow: hidden;
-  margin-top: -120vh;
-  margin-left: -10vw;
+  margin-top: -110vh;
+  margin-left: -20vw;
   width: 800px;
   height: 800px;
   background: rgba(0,0,0,0.2);
