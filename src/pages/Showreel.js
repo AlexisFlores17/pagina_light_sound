@@ -11,15 +11,19 @@ import ReactPlayer from 'react-player';
 export const Showreel = () => {
     return (
         <div className='showreel-container'>
-        <div className='player-wrapper'>
-          <ReactPlayer
-            className='react-player'
-            url="https://vimeo.com/454591343"
-            width='100vw'
-            height='100vh'
-            controls={true}
-          />
-        </div>
+          <div className="figuras-showreel">
+            <div className="circulo1"><h1 className="texto-showreel">Showreel</h1></div>
+            <div className="circulo2"></div>
+          </div>
+          <div className='player-wrapper'>
+            <ReactPlayer
+              className='react-player'
+              url="https://vimeo.com/454591343"
+              width='100vw'
+              height='100vh'
+              controls={true}
+            />
+          </div>
         </div>
     )
 }
