@@ -55,13 +55,59 @@
   
 }
 
+.contacto-div-movil {
+  @media(max-width: 380px){
+    display: flex;
+    flex-direction: column;
+    width: 100vw ;
+    height: 50vh ;
+  }
+}
+#contacto-right-movil {
+  display: none;
+
+  @media(max-width: 380px){
+    display: block;
+    background-image: url("./../../images/contacto2.png");
+    background-size: auto 60vh;
+    background-position-x: left;
+    background-position-y: center;
+    position: absolute;
+    margin-top: -33vh;
+  }
+}
+
+.contacto-div-top-movil {
+  overflow: hidden;
+  height: 60%;
+  position: relative;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+}
+
+.contacto-quote-movil {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 26px;
+
+}
 #contacto-right {
   background-image: url("./../../images/contacto2.png");
   background-size: auto 100vh;
   background-position-x: left;
-  background-position-y: top;
-  
-
+  background-position-y: center;
+  @media(max-width: 380px){
+    display: none;
+  }
 }
 
 .contacto-div-top {
@@ -92,5 +138,87 @@
     top: 70%;
     padding-top: 20px;
     padding-bottom: 70px;
+  }
+}
+
+#contacto-animacion{
+  @media (max-width: 575px){
+    position: absolute;
+    margin-top: 37vh;
+  }
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.contact{
+  a{
+    font-weight: 200;
+    text-decoration: none;
+    font-size: 20px;   
+    @media (max-width: 575px){
+      font-size: 16px;
+    }
+    border-bottom: 1px solid;   
+    line-height: 2em;
+    transition-duration: 300ms;
+    color: black;
+    &:hover{
+      color: gray;
+    }
+  }
+  
+}    
+.mail{
+  font-size: 18px;  
+  @media (max-width: 575px){
+    font-size: 16px;
+  }    
+  margin-bottom: 10px !important;
+  border-bottom: 1px solid;
+}
+.siguenos{
+  font-weight: 200;
+  text-align: center !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px;
+}
+.social-icons{      
+  margin-top: 1rem;
+  .icon{    
+    border-radius: 50%;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    color: black;
+    transition-duration: 300ms;
+    &:hover{
+      background-color: $magenta;
+      color: white;
+      border-color: white;
+    }
+    width: 4rem;
+    height: 4rem;
+    @media (max-width: 575px){
+      width: 3rem;
+      height: 3rem;
+    }
+    position: relative;
+    display: inline-block;    
+    margin-left: 1rem;  
+    margin-right: 1rem;  
+    .icon-text{
+      
+      font-weight: 300;
+      font-size: 14px;
+      @media (max-width: 575px){
+        font-size: 12px;
+      }
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }

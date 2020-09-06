@@ -46,6 +46,18 @@ export const Contacto = () => {
 
     return (
         <div className='showreel-container'>
+
+            <div id="contacto-right-movil" className="contacto-div-movil" >
+                <div className='contacto-div-top-movil'>
+                    
+                    <div className='contacto-quote-movil rounded col-12' >
+                        <Fade top delay={1000} >"El arte desafía a la tecnología y la tecnología inspira al arte"</Fade>
+                        <br/>
+                        <Fade top delay={2000} >-John Lasseter.</Fade>
+                    </div>
+                </div>	
+            </div>
+
             <div id="contacto-left"  className="contacto-div" ref={el => contacto = el}>
                 <h1 ref={ el => line1 = el}>
                     Hagamos algo juntos
@@ -59,14 +71,14 @@ export const Contacto = () => {
                 
 
                 <div className="col-sm" id="contacto-animacion">
+                   
+                    
                     <p className="contact">
                         <a href="tel:+52 1 55 2746 0988" rel="noopener noreferrer" target="_blank" id="numero-animar">+52 1 55 2746 0988</a>
                         <br/>
                         <a href="mailto:contacto@lsd.com.mx" rel="noopener noreferrer" target="_blank" id="correo-animar">contacto@lsdlab.com.mx</a>
                     </p>
-                                            
-                    <h5 className="siguenos">Síguenos</h5>
-
+                    <h5 className="siguenos">Síguenos</h5>                  
                     <div className="social-icons">   
                         <a href="https://www.instagram.com/lab_lsd/" rel="noopener noreferrer" target="_blank">
                             <div className="icon">
