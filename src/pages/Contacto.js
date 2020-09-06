@@ -10,7 +10,7 @@ import Fade from "react-reveal/Fade";
 
 export const Contacto = () => {
     return (
-        <div className='showreel-container'>
+        <div className='contacto-container'>
             <div id="contacto-left"  className="contacto-div" >
                 <h1>
                     Hagamos algo juntos
