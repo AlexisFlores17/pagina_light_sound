@@ -10,20 +10,9 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logocircular.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
@@ -43,10 +32,48 @@
         transition: all 1s ease-in-out;
         background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_6.gif) center no-repeat #fff;
       }
+      .ball {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border: 3px solid white;
+        border-radius: 50%;
+        z-index: -1;
+        animation: cursor-animation 2s ease-in-out infinite;
+      }
+
+      @keyframes cursor-animation{
+        0%{
+          width: 50px;
+          height: 50px;
+        }
+        50%{
+          width: 20px;
+          height: 20px;
+        }
+        100%{
+          width: 50px;
+          height: 50px;
+        }
+      }
+      .ball1 {
+        width: 10px;
+        height: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        border-radius: 50%;
+        z-index: 0;
+      }
     </style>
   </head>
   <body>
     <div class="se-pre-con"></div>
+    <div class="ball"></div>
+    <div class="ball1"></div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     
@@ -54,12 +81,12 @@
 
   <script>
 
-  window.onload = function(){
-    document.querySelector(".se-pre-con").style.opacity = "0";
-    setTimeout(function(){
-      document.querySelector(".se-pre-con").style.display = "none";
-    },1000);
-  }
+    window.onload = function(){
+      document.querySelector(".se-pre-con").style.opacity = "0";
+      setTimeout(function(){
+        document.querySelector(".se-pre-con").style.display = "none";
+      },1000);
+    }
 
   </script>
 
