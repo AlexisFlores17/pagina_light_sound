@@ -4,11 +4,12 @@
   background-color: #eaebed;
 }
 
+
 .contacto-div {
   height: 100vh ;
   width: 49vw ;
   display: inline-block ;
-  @media(max-width: 380px){
+  @media(max-width: 420px){
     display: flex;
     flex-direction: column;
     width: 100vw ;
@@ -34,7 +35,7 @@
     padding: 0 20px;
     font-size: 1.5rem;
   }
-  @media(max-width: 380px){
+  @media(max-width: 420px){
     vertical-align: center ;
     height: 50%;
     h1{
@@ -56,7 +57,7 @@
 }
 
 .contacto-div-movil {
-  @media(max-width: 380px){
+  @media(max-width: 420px){
     display: flex;
     flex-direction: column;
     width: 100vw ;
@@ -66,7 +67,7 @@
 #contacto-right-movil {
   display: none;
 
-  @media(max-width: 380px){
+  @media(max-width: 420px){
     display: block;
     background-image: url("./../../images/contacto2.png");
     background-size: auto 60vh;
@@ -105,7 +106,7 @@
   background-size: auto 100vh;
   background-position-x: left;
   background-position-y: center;
-  @media(max-width: 380px){
+  @media(max-width: 420px){
     display: none;
   }
 }
@@ -115,7 +116,7 @@
   height: 100%;
   position: relative;
   text-align: center;
-  @media(max-width: 380px){
+  @media(max-width: 420px){
     height: 50%;
     
   }
@@ -133,7 +134,7 @@
   transform: translate(-50%, -50%);
   font-size: 26px;
 
-  @media(max-width: 380px){
+  @media(max-width: 420px){
     width: 500px;
     top: 70%;
     padding-top: 20px;

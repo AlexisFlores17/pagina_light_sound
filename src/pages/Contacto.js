@@ -70,7 +70,7 @@ export const Contacto = () => {
                 </h5>
                 
 
-                <div className="col-sm" id="contacto-animacion">
+                <div className="col-sm-12" id="contacto-animacion">
                    
                     
                     <p className="contact">
