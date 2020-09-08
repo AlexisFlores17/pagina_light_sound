@@ -76,6 +76,10 @@
     position: absolute;
     margin-top: -33vh;
   }
+
+  @media(min-width: 540px){
+    padding-right: 50px;
+  }
 }
 
 .contacto-div-top-movil {
