@@ -5,11 +5,11 @@ export const Footer = () => {
         <footer>
             <div className="container">
                 <div className="row mr-0">
-                    <div className="col-sm" id="hagamos">
+                    <div className="col-12 col-sm-6" id="hagamos">
                         <div className="contactanos">Hagamos algo juntos</div>
                         <div className="project">¿Tienes algún desafío creativo para nosotros? <br/>Nos encantaría escucharlo</div>                       
                     </div>
-                    <div className="col-sm" id="contacto-animacion">
+                    <div className="col-12 col-sm-6" id="contacto-animacion">
                         <p className="contact">
                             <a href="tel:+52 1 55 2746 0988" rel="noopener noreferrer" target="_blank" id="numero-animar">+52 1 55 2746 0988</a>
                             <br/>
@@ -49,7 +49,7 @@ export const Footer = () => {
                 
                 
             </div>            
-            <div className="copyright" id="copy-animacion">© LSD LAB 2020</div>
+            <div className="copyright" id="copy-animacion">© LSD LAB {new Date().getFullYear()}</div>
         </footer>
         
     )
