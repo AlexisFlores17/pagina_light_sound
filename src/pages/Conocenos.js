@@ -1,82 +1,69 @@
 import React, {useEffect, useRef} from 'react'
 import gsap from 'gsap'
 
-
-
 export const Conocenos = () => {
-    let magicEl = useRef(null)
-
-    // let cursor = useRef(null)
-    // let follower = useRef(null)
+    let mask = useRef(null);
+    let container = useRef(null);
+    let maskContent = useRef(null);
 
     useEffect(() => {
-        var magic = magicEl
-        var magicWHalf = magic.offsetWidth / 2
-        
-        
+        let pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+        let mouse = { x: pos.x, y: pos.y };
+        let speed = 0.1;
 
+        gsap.set(mask, { xPercent: -50, yPercent: -50 });
+        gsap.set(maskContent, {
+        width: container.offsetWidth,
+        height: container.offsetHeight
+        });
+        container.addEventListener("mousemove", onMove);
 
-        let posX = 0
-        let posY = 0
-    
-        let mouseX = 0
-        let mouseY = 0
-        document.body.onmousemove = function(e) {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
-            // magic.style.setProperty("left",  `${e.clientX - magicWHalf}px` );
-            // magic.style.setProperty("top", `${e.clientY - magicWHalf - 200}px`);
-            
+        var xSet = gsap.quickSetter(mask, "x", "px");
+        var ySet = gsap.quickSetter(mask, "y", "px");
+
+        var xSetContent = gsap.quickSetter(maskContent, "x", "px");
+        var ySetContent = gsap.quickSetter(maskContent, "y", "px");
+
+        gsap.ticker.add(() => {
+        var dt = 1.0 - Math.pow(1.0 - speed, gsap.ticker.deltaRatio());
+
+        pos.x += (mouse.x - pos.x) * dt;
+        pos.y += (mouse.y - pos.y) * dt;
+        xSet(pos.x);
+        ySet(pos.y);
+        xSetContent(-pos.x);
+        ySetContent(-pos.y);
+        });
+        function onMove(e) {
+        mouse.x = e.x;
+        mouse.y = e.y;
         }
-
-        gsap.to({}, 0.016, {
-            repeat: -1,
-            onRepeat: function() {
-              posX += (mouseX - posX) / 9;
-              posY += (mouseY - posY) / 9;
-          
-            //   gsap.set(follower, {
-            //       css: {
-            //       left: posX - 80,
-            //       top: posY - 80
-            //       }
-            //   });
-          
-              gsap.set(magic, {
-                  css: {
-                  left: mouseX - magicWHalf,
-                  top: mouseY- magicWHalf
-                  }
-              });
-            }
-            
-          });
-
-
-    }, [])
+    }, []);
     
     return (
-        <div className='conocenos-container-home'>
-
-
-            <div className="scene">
-                <div className="figuras">
+        
+        <div className="container" ref={(el) => (container = el)}>
+            <div className="scene"></div>
+            <div className="figuras">
                     <div className="triangulo"></div>
                     <div className="circulo"></div>
-                </div>
-                <div className="lax" data-lax-opacity="(vh*1.5) 0,(vh*1.8) 1 , (vh*2.5) 1, (vh*3) 0 ">
-                    
-                    <div className="magic" ref={el => magicEl = el} >
-                        <div id="texto" >Conócenos</div>
+            </div>
+            <div className="conocenos-texto">
+                <h1 className="lax titulo-conocenos" data-lax-translate-y="0 0vh, vh vh, (vh*1.8) 0 " data-lax-opacity=" (vh*2) 1 , (vh*3) 0 ">El equipo</h1>
+                <p className="lax informacion-conocenos" data-lax-translate-y="0 0vh, vh vh, (vh*1.8) 0 " data-lax-opacity=" (vh*2) 1 , (vh*3) 0 ">Somos un equipo de creadores, pensadores, exploradores y nerds tecnológicos. Nos enfocamos en nuestros proyectos con curiosidad y experimentación, usando todo lo que aprendemos para diseñar experiencias que conecten con personas como tú.</p>
+            </div>
+            <div className="boton-conocenos">Presiona para conocernos</div>
+
+            <div className="mask-container">
+                <div className="mask" ref={(el) => (mask = el)}>
+                    <div className="mask-content" ref={(el) => (maskContent = el)}>
+                        <div className="team"></div>
                     </div>
                 </div>
-                <div className="conocenos-texto">
-                    <h1 className="lax titulo-conocenos" data-lax-translate-y="0 0vh, vh vh, (vh*1.8) 0 " data-lax-opacity=" (vh*2) 1 , (vh*3) 0 ">El equipo</h1>
-                    <p className="lax informacion-conocenos" data-lax-translate-y="0 0vh, vh vh, (vh*1.8) 0 " data-lax-opacity=" (vh*2) 1 , (vh*3) 0 ">Somos un equipo de creadores, pensadores, exploradores y nerds tecnológicos. Nos enfocamos en nuestros proyectos con curiosidad y experimentación, usando todo lo que aprendemos para diseñar experiencias que conecten con personas como tú.</p>
-                </div>
-                <div className="boton-conocenos">Presiona para conocernos</div>
-            </div>            
+            </div>
         </div>
+        
+        
 
     )
 }

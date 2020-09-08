@@ -58,7 +58,7 @@ export const ConocenosDetalle = () => {
         <div id="sa-flecha"></div>
       </div>
 
-      <div className="container">
+      <div >
         <div className="row" id="foto-conocenos">
           {team.map((member) => (
             <div key={member.name} className="col-12 col-md-6 col-lg-4">
