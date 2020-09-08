@@ -1,162 +1,71 @@
+
 .contacto-section {
   overflow: hidden;
   height: 100vh;
   background-color: #eaebed;
 }
 
-
-.contacto-div {
-  height: 100vh ;
-  width: 49vw ;
-  display: inline-block ;
-  @media(max-width: 420px){
-    display: flex;
-    flex-direction: column;
-    width: 100vw ;
-    height: 70vh ;
-  }
+.contacto-div{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
 }
+
 
 #contacto-left {
-  vertical-align: top ;
-  font-family: 'Montserrat', sans-serif ;
-  color: black;
-  h1{
-    font-weight: 600;
-    font-size: 4rem;
-    margin-top: 10%;
-    text-align: left;
-    padding: 0 20px;
-    
-  }
-  h5{
-    margin-top: 10%;
-    text-align: left;
-    padding: 0 20px;
-    font-size: 1.5rem;
-  }
-  @media(max-width: 420px){
-    vertical-align: center ;
-    height: 50%;
-    h1{
-      font-weight: 600;
-      font-size: 2rem;
-      margin-top: 10%;
-      text-align: left;
-      padding: 0 20px;
-      
-    }
-    h5{
-      margin-top: 10%;
-      text-align: left;
-      padding: 0 20px;
-      font-size: 1rem;
-    }
-  }
+
   
 }
 
-.contacto-div-movil {
-  @media(max-width: 420px){
-    display: flex;
-    flex-direction: column;
-    width: 100vw ;
-    height: 50vh ;
-  }
-}
-#contacto-right-movil {
-  display: none;
 
-  @media(max-width: 420px){
-    display: block;
-    background-image: url("./../../images/contacto2.png");
-    background-size: auto 60vh;
-    background-position-x: left;
-    background-position-y: center;
-    position: absolute;
-    margin-top: -33vh;
-  }
 
-  @media(min-width: 540px){
-    padding-right: 50px;
-  }
-}
 
-.contacto-div-top-movil {
-  overflow: hidden;
-  height: 60%;
-  position: relative;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  
-}
 
-.contacto-quote-movil {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
-  width: 1000px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 26px;
-
-}
 #contacto-right {
-  background-image: url("./../../images/contacto2.png");
-  background-size: auto 100vh;
-  background-position-x: left;
-  background-position-y: center;
-  @media(max-width: 420px){
-    display: none;
-  }
-}
-
-.contacto-div-top {
-  overflow: hidden;
-  height: 100%;
-  position: relative;
-  text-align: center;
-  @media(max-width: 420px){
-    height: 50%;
-    
-  }
   
 }
-.contacto-quote {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
-  width: 1000px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 26px;
 
-  @media(max-width: 420px){
-    width: 500px;
-    top: 70%;
-    padding-top: 20px;
-    padding-bottom: 70px;
-  }
+
+.contacto-quote{
+  position: absolute;
+  padding: 40px;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  color: white;
 }
 
-#contacto-animacion{
-  @media (max-width: 575px){
-    position: absolute;
-    margin-top: 37vh;
+#imagen{
+  overflow: hidden;
+  height: 800px;
+  position: absolute;
+
+  @media(min-width:500px){
+    height: 750px;
+    top: -80px;
+    left: -100px;
   }
-  display: flex;
-  flex-direction: column;
-  margin-top: 70px;
+
+  @media(min-width:828px){
+    height: 750px;
+    top: -100px;
+    left: -100px;
+  }
+
+  @media(min-width:930px){
+    height: 750px;
+    top: -150px;
+    left: -30px;
+  }
+
+}
+
+
+.contacto-animacion{
+ 
 }
 
 .contact{
+  display: flex;
+  display: block;
   a{
     font-weight: 200;
     text-decoration: none;
