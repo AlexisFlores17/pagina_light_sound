@@ -51,16 +51,18 @@ export const Contacto = () => {
  
             <div className="contacto-div">
                 <div id="contacto-left" ref={el => contacto = el} className="col-xl-6">
-                        <h1 ref={ el => line1 = el}>
+                        <h1 className="contacto-titulo col-12" ref={ el => line1 = el}>
                             Hagamos algo juntos
                         </h1>
-                        <h5 id="texto2" >
-                            <div ref= {el => line2 = el}>¿Tienes algún desafío creativo para nosotros?</div>
-                            <br></br>
-                            <br></br>
-                            <div ref= {el => line3 = el}>Nos encantaría escucharlo</div>
+                        <h5 className="contacto-texto col-12" >
+                            <div>
+                                <div ref= {el => line2 = el}>¿Tienes algún desafío creativo para nosotros?</div>
+                                <br></br>
+                                <br></br>
+                                <div ref= {el => line3 = el}>Nos encantaría escucharlo</div>
+                            </div>
                         </h5>
-
+                        <br></br>
                         <div id="contacto-animacion" >
             
                             
@@ -106,6 +108,56 @@ export const Contacto = () => {
                     </div>
                     
                 </div> 
+
+                <div id="contacto-left-movil" ref={el => contacto = el} className="col-xl-6">
+                    <h1 className="contacto-titulo-movil col-12" ref={ el => line1 = el}>
+                        Hagamos algo juntos
+                    </h1>
+                    <h5 className="contacto-texto-movil col-12" >
+                        <div>
+                            <div ref= {el => line2 = el}>¿Tienes algún desafío creativo para nosotros?</div>
+                            <br></br>
+                            <br></br>
+                            <div ref= {el => line3 = el}>Nos encantaría escucharlo</div>
+                        </div>
+                    </h5>
+                    <br></br>
+                    <div id="contacto-animacion" >
+        
+                        
+                        <p className="contact">
+                            <a href="tel:+52 1 55 2746 0988" rel="noopener noreferrer" target="_blank" id="numero-animar">+52 1 55 2746 0988</a>
+                            <br/>
+                            <a href="mailto:contacto@lsd.com.mx" rel="noopener noreferrer" target="_blank" id="correo-animar">contacto@lsdlab.com.mx</a>
+                        </p>
+                        <h5 className="siguenos">Síguenos</h5>                  
+                        <div className="social-icons">   
+                            <a href="https://www.instagram.com/lab_lsd/" rel="noopener noreferrer" target="_blank">
+                                <div className="icon">
+                                    <span className="icon-text">IG</span>
+                                </div>
+                            </a>  
+
+                            <a href="https://www.facebook.com/lab.lsd" rel="noopener noreferrer" target="_blank">
+                                <div className="icon">
+                                    <span className="icon-text">FB</span>
+                                </div>
+                            </a>
+
+                            <a href="https://twitter.com/lab_lsd" rel="noopener noreferrer" target="_blank">
+                                <div className="icon">
+                                    <span className="icon-text">TW</span>
+                                </div>
+                            </a>
+
+                            <a href="https://www.linkedin.com/company/light-sound-disruptive-lab" rel="noopener noreferrer" target="_blank">
+                                <div className="icon">
+                                    <span className="icon-text">LKD</span>
+                                </div>
+                            </a>                
+                        </div>
+                    </div>           
+                </div>
             </div>
         </div>
     )
