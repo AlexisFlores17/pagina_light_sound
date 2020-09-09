@@ -61,7 +61,7 @@ export const ConocenosDetalle = () => {
       <div >
         <div className="row mr-0" id="foto-conocenos">
           {team.map((member) => (
-            <div key={member.name} className="col-12 col-md-6 col-lg-4">
+            <div key={member.name} className="col-12 col-md-6 col-lg-4 pr-0">
               <TeamMember
                 name={member.name}
                 descripcion={member.descripcion}
