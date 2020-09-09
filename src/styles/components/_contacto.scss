@@ -35,26 +35,61 @@
 
 #imagen{
   overflow: hidden;
-  height: 800px;
   position: absolute;
+  height: 800px;
+  padding: 20px;
 
+ 
   @media(min-width:500px){
-    height: 750px;
-    top: -80px;
+    height: 700px;
+    top: -50px;
     left: -100px;
   }
+  
+  @media(min-width:600px){
+    left: -80px;
+  }
+
 
   @media(min-width:828px){
-    height: 750px;
-    top: -100px;
-    left: -100px;
+    height: 730px;
+    top: -120px;
+    left: -20px;
   }
 
   @media(min-width:930px){
-    height: 750px;
-    top: -150px;
-    left: -30px;
+    height: 800px;
+    top: -180px;
+    left: 20px;
   }
+
+ @media(max-height:623px){
+    height: 640px;
+    top: -110px;
+    @media(min-width:500px){
+      height: 550px;
+      top: -20px;
+      left: -40px;
+    }
+
+    @media(min-width:600px){
+      left: -20px;
+    }
+
+
+    @media(min-width:828px){
+      height: 600px;
+      top: -80px;
+      left: 10px;
+    }
+
+    @media(min-width:930px){
+      height: 580px;
+      top: -60px;
+      left: 85px;
+    }
+  }
+
 
 }
 
