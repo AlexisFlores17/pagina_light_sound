@@ -9,54 +9,16 @@ import { PaginaPrincipal } from '../pages/PaginaPrincipal'
 import { ConocenosDetalle } from '../pages/conocenos/ConocenosDetalle'
 import { Footer } from '../pages/Footer'
 import Header2 from '../components/Header2'
-
+import Mouse from './../components/mouse';
 
 
 export const AppRoutes = () => {
-    // let cursor = useRef(null)
-    // let follower = useRef(null)
-
-    // useEffect(() => {
-    //     let posX = 0
-    //     let posY = 0
-    
-    //     let mouseX = 0
-    //     let mouseY = 0
-    //     document.body.onmousemove = function(e) {
-    //         mouseX = e.clientX;
-    //         mouseY = e.clientY;
-    //         console.log(mouseX)
-    //     }
-
-    //     gsap.to({}, 0.016, {
-    //         repeat: -1,
-    //         onRepeat: function() {
-    //           posX += (mouseX - posX) / 9;
-    //           posY += (mouseY - posY) / 9;
-          
-    //           gsap.set(follower, {
-    //               css: {
-    //               left: posX - 12,
-    //               top: posY - 12
-    //               }
-    //           });
-          
-    //           gsap.set(cursor, {
-    //               css: {
-    //               left: mouseX,
-    //               top: mouseY
-    //               }
-    //           });
-    //         }
-    //       });
-
-
-    // }, [])
     
 
     return (
         <Router>            
-            <div>                
+            <div>   
+                <Mouse />             
                 <Switch>
                     <Route path='/Conocenos/info'>
                         <Header2 />     
