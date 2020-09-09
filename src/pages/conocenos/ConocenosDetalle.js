@@ -59,7 +59,7 @@ export const ConocenosDetalle = () => {
       </div>
 
       <div >
-        <div className="row" id="foto-conocenos">
+        <div className="row mr-0" id="foto-conocenos">
           {team.map((member) => (
             <div key={member.name} className="col-12 col-md-6 col-lg-4">
               <TeamMember
