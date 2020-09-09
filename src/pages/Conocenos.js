@@ -52,7 +52,7 @@ export const Conocenos = () => {
     return (
         
         <div className="container" ref={(el) => (container = el)}>
-            <div className="ball" ref = {el => ball = el}>Click</div>
+            <div className="conocenosCursor" ref = {el => ball = el}>Click</div>
             <div className="figuras">
                     <div className="triangulo"></div>
                     <div className="circulo"></div>
