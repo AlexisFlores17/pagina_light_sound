@@ -51,6 +51,10 @@
   }
 }
 
+.color-magenta{
+  color: $magenta !important;
+}
+
 .explore-descripcion{
     display:flex;
     align-items: center;
@@ -66,6 +70,7 @@
 .explore-option{
   animation: ex-animation 4s ease-in-out infinite ;
 }
+
 
 .ex-p2 {
   animation-delay: 1000ms;
