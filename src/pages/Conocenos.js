@@ -5,6 +5,7 @@ export const Conocenos = () => {
     let mask = useRef(null);
     let container = useRef(null);
     let maskContent = useRef(null);
+    let ball = useRef(null)
 
     useEffect(() => {
         let pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
@@ -12,6 +13,8 @@ export const Conocenos = () => {
         let speed = 0.1;
 
         gsap.set(mask, { xPercent: -50, yPercent: -50 });
+        gsap.set(ball, { xPercent: -50, yPercent: -50 });
+
         gsap.set(maskContent, {
         width: container.offsetWidth,
         height: container.offsetHeight
@@ -24,6 +27,9 @@ export const Conocenos = () => {
         var xSetContent = gsap.quickSetter(maskContent, "x", "px");
         var ySetContent = gsap.quickSetter(maskContent, "y", "px");
 
+        var xSetBall = gsap.quickSetter(ball, "x", "px");
+        var ySetBall = gsap.quickSetter(ball, "y", "px");
+
         gsap.ticker.add(() => {
         var dt = 1.0 - Math.pow(1.0 - speed, gsap.ticker.deltaRatio());
 
@@ -33,6 +39,9 @@ export const Conocenos = () => {
         ySet(pos.y);
         xSetContent(-pos.x);
         ySetContent(-pos.y);
+
+        xSetBall(pos.x);
+        ySetBall(pos.y);
         });
         function onMove(e) {
         mouse.x = e.x;
@@ -43,7 +52,7 @@ export const Conocenos = () => {
     return (
         
         <div className="container" ref={(el) => (container = el)}>
-            <div className="scene"></div>
+            <div className="ball" ref = {el => ball = el}>Click</div>
             <div className="figuras">
                     <div className="triangulo"></div>
                     <div className="circulo"></div>
