@@ -96,7 +96,7 @@ export default function Plane() {
             </div>   
             <div className="mision" ref={el => mision = el}>
                 <h2>Misión</h2>		
-                <p>Contribuir como agente de cambio e innovación con soluciones tecnológicas para las industrias creativas</p>				
+                <p>Contribuir a mejorar la vida de las personas mediante la implementación de tecnologías creativas y la transformación cultural social y económica nacional y global</p>				
             </div>                  
             
             
