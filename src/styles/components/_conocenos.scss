@@ -6,21 +6,32 @@
   color: white;  
 }
 .conocenos-texto{
+  overflow: hidden;
     
   }
 
   .titulo-conocenos{
-    
+    font-weight: 700;
+    font-size: 15vw;
+    text-align: right;    
     @media(max-width: 400px){
-     
+      font-size: 70px !important;
+      text-align: start!important; 
     }
   }
 
   .informacion-conocenos{
-    
+    font-size: 25px;
+    text-align: start; 
+    margin-top: 100px;
+      
+      
+
 
     @media(max-width: 400px){
-    
+      margin-top:100px;
+      font-size: 15px !important;
+      text-align: center!important; 
     }
 
   }
@@ -59,8 +70,7 @@
 ///Mouse Hover Image Start
 .container {
   height: 100vh; 
-  .scene {    
-  }  
+  
   .mask-container {
     position: absolute;
     top: 0;
@@ -81,7 +91,7 @@
     left: 0;      
     .team{
       height: 120%;
-      width: 130%;
+      width: 150%;
       /* Location of the image */
       background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/hover-reveal.jpg);
       
