@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import { useLax } from 'use-lax';
 import  lax  from 'lax.js';
 import { FooterMain } from "./FooterMain";
+import changeCursor from './../components/ChangeCursor'
 
  
 export const PaginaPrincipal = () => {
@@ -57,28 +58,11 @@ export const PaginaPrincipal = () => {
       lax.updateElements();    
     });
 
-    window.addEventListener("scroll", (e) =>{
-
-      if(window.scrollY > window.innerHeight*3){
-        document.querySelector('.ball1Black').style.display = "block";
-        document.querySelector('.ballBlack').style.display = "block";
-        document.querySelector('.ball1').style.display = "none";
-        document.querySelector('.ball').style.display = "none";
-      }else{
-        document.querySelector('.ball1Black').style.display = "none";
-        document.querySelector('.ballBlack').style.display = "none";
-        document.querySelector('.ball1').style.display = "block";
-        document.querySelector('.ball').style.display = "block";
-      }
-      
-      if(window.scrollY > window.innerHeight/2){
-        document.querySelector(".header-navbar").style.display="none";
-      }else{
-        document.querySelector(".header-navbar").style.display="block";
-      }
-    })
+    window.addEventListener("scroll", changeCursor)
 
   });
+
+  
 
   function scrollTop() {
     window.scroll(0, 0);

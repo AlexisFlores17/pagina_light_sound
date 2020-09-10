@@ -9,6 +9,8 @@ import mija from "../../images/mija.jpeg";
 import mauro from "../../images/mauro.jpeg";
 import Plane from "../../components/plane";
 import { useLax } from "use-lax";
+import changeCursor from './../../components/ChangeCursor'
+
 
 const team = [
   {
@@ -49,7 +51,7 @@ export const ConocenosDetalle = () => {
   useLax();
 
   useEffect(() => {
-    window.removeEventListener("scroll", (e) =>{});
+    window.removeEventListener("scroll", changeCursor);
   },[])
 
   return (
