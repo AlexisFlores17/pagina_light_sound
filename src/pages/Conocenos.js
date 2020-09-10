@@ -51,22 +51,30 @@ export const Conocenos = () => {
     
     return (
         
-        <div className="container" ref={(el) => (container = el)}>
+        <div className="containerConocenos" ref={(el) => (container = el)}>
             <div className="conocenosCursor" ref = {el => ball = el}>Click</div>
+            <div className="scene">
+
+            </div>
             <div className="figuras">
                     <div className="triangulo"></div>
                     <div className="circulo"></div>
             </div>
             <div className="conocenos-texto">
                 <h1 className="lax titulo-conocenos" data-lax-translate-y="0 0vh, vh vh, (vh*1.8) 0 " data-lax-opacity=" (vh*2) 1 , (vh*3) 0 ">El equipo</h1>
-                <p className="lax informacion-conocenos" data-lax-translate-y="0 0vh, vh vh, (vh*1.8) 0 " data-lax-opacity=" (vh*2) 1 , (vh*3) 0 ">Somos un equipo de creadores, pensadores, exploradores y nerds tecnológicos. Nos enfocamos en nuestros proyectos con curiosidad y experimentación, usando todo lo que aprendemos para diseñar experiencias que conecten con personas como tú.</p>
+                <p className="lax informacion-conocenos" data-lax-translate-y="0 0vh, vh vh, (vh*1.8) 0 " data-lax-opacity=" (vh*2) 1 , (vh*3) 0 ">Somos un equipo de creadores, pensadores, exploradores y nerds tecnológicos. <br/><br/>Nos enfocamos en nuestros proyectos con curiosidad y experimentación, usando todo lo que aprendemos para diseñar experiencias que conecten con personas como tú.</p>
+                
             </div>
             <div className="boton-conocenos">Presiona para conocernos</div>
+            
 
             <div className="mask-container">
+                
                 <div className="mask" ref={(el) => (mask = el)}>
                     <div className="mask-content" ref={(el) => (maskContent = el)}>
+                       
                         <div className="team"></div>
+                        
                     </div>
                 </div>
             </div>

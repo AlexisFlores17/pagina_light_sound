@@ -1,22 +1,34 @@
 .conocenos-section{      
-  background-image: linear-gradient( -45deg, #9b23ea 0%, $purple 100%);
+  //background-image: linear-gradient( -45deg, #9b23ea 0%, $purple 100%);
   position: relative;
   text-decoration-line: none  ;
   overflow: hidden;  
   color: white;  
+  background-color: #fff;
+  
+  
 }
 .conocenos-texto{
   overflow: hidden;
-    
+  position: absolute;
+  top: 0;
+  
   }
 
   .titulo-conocenos{
+    margin-top: 10%;
     font-weight: 700;
-    font-size: 15vw;
-    text-align: right;    
+    font-size: 10vw;
+    text-align: right;   
+    margin-right: 20px;
+    
     @media(max-width: 400px){
       font-size: 70px !important;
-      text-align: start!important; 
+      text-align: center !important; 
+    }
+    @media(max-width: 320px){      
+      font-size: 60px !important; 
+      text-align: center !important;      
     }
   }
 
@@ -24,18 +36,31 @@
     font-size: 25px;
     text-align: start; 
     margin-top: 100px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5%;
+    
+    
+
     @media(max-height: 550px){      
       font-size: 15px;
-      
-    }
-      
-      
-
-
-    @media(max-width: 400px){
       margin-top:100px;
-      font-size: 15px !important;
-      text-align: center!important; 
+    }
+    @media(max-width: 540px){   
+      margin-top: 30%;   
+      font-size: 18px;
+      margin-top:100px;
+    }
+    
+    @media(max-width: 414px){
+      margin-top:100px;
+      font-size: 20px !important;
+      text-align: left!important; 
+    }
+    @media(max-width: 320px){
+      margin-top:10px;
+      font-size: 17px !important;
+      text-align: left!important; 
     }
 
   }
@@ -50,6 +75,7 @@
   }
 .figuras{
   position: absolute;
+  top: 0;
 }
   .triangulo{
     margin-left: 700px;
@@ -72,59 +98,76 @@
 }
 
 ///Mouse Hover Image Start
-.container {
-  height: 100vh; 
+.containerConocenos {
+  height: 100%;
+  width: 100%;  
+  
+  .scene{    
+    background-image: linear-gradient( -45deg, #9b23ea 0%, $purple 100%);
+    height: 100%;
+    width: 100%;
+
+  }
   
   .mask-container {
-    position: absolute;
+    position: absolute;      
     top: 0;
     left: 0;
+    height: 100%;
     width: 100%;
-    height: 100%; 
+
+    @media(max-width: 768px){
+      display: none;
+    }
     
-  }  
-  .mask {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;    
-  }
-  .mask-content {    
-    position: absolute;
-    top: 0;
-    left: 0;      
-    .team{
-      height: 120%;
-      width: 150%;
-      /* Location of the image */
-      background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/hover-reveal.jpg);
+  
+    .mask {    
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;          
+    }
+    .mask-content {          
+      top: 0;
+      left: 0;     
+      height: 100%;
+      width: 100%;
+              
       
-      /* Background image is centered vertically and horizontally at all times */
-      background-position: center center;
-      
-      /* Background image doesn't tile */
-      //background-repeat: no-repeat;
-      
-      /* Background image is fixed in the viewport so that it doesn't move when 
-         the content's height is greater than the image's height */
-      //background-attachment: fixed;
-      
-      /* This is what makes the background image rescale based
-         on the container's size */
-      background-size: cover;
-      
-      /* Set a background color that will be displayed
-         while the background image is loading */
-      background-color: #464646;
-      
+      .team{
+        height: 120%;
+        width: 120%;
+        
+         /* Location of the image */
+        background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/hover-reveal.jpg);
+          
+        /* Background image is centered vertically and horizontally at all times */
+        background-position: center center;
+        
+        /* Background image doesn't tile */
+        background-repeat: no-repeat;
+        
+        /* Background image is fixed in the viewport so that it doesn't move when 
+          the content's height is greater than the image's height */
+        // background-attachment: fixed;
+        
+        /* This is what makes the background image rescale based
+          on the container's size */
+        background-size: cover;
+        
+        /* Set a background color that will be displayed
+          while the background image is loading */
+        background-color: #464646;   
+
+      }
     }
     
     
-    
-    
-  }
+  }  
+  
 }
 ///Mouse Hover Image End
+
 .conocenosCursor {
   color: white;
   font-size: 10px;
@@ -138,6 +181,9 @@
   z-index: 100;
   line-height: 50px;
   animation: conocenos-animation 2s ease-in-out infinite;
+  @media(max-width: 768px){
+    display: none;
+  }
 }
 @keyframes conocenos-animation{
   0%{
@@ -161,123 +207,123 @@
 }
 
 
-//conocenos detalle
+// //conocenos detalle
 
-.conocenos-container{
-  color: white;
-  text-align: center;
-  font-weight: 400;
-  font-size: 1.36363636em;
-  line-height: 1.5;  
-  margin-bottom: 10%;  
-  .content{    
-    width: 80%;
-    margin: 0 auto;
-    font-weight: 100;
-    .description{
-      margin-bottom: 40px;  
-      margin-top: 10%;
-    }
-    h2{
-      font-weight: 300;
-      margin-bottom: 40px; 
-      @media (max-width: 374px){
-        font-size: 30px;
-      } 
-    }
-    p{      
-      margin-bottom: 40px;
-      @media (max-width: 374px){
-        font-size: 18px;
-      }   
-    }
+// .conocenos-container{
+//   color: white;
+//   text-align: center;
+//   font-weight: 400;
+//   font-size: 1.36363636em;
+//   line-height: 1.5;  
+//   margin-bottom: 10%;  
+//   .content{    
+//     width: 80%;
+//     margin: 0 auto;
+//     font-weight: 100;
+//     .description{
+//       margin-bottom: 40px;  
+//       margin-top: 10%;
+//     }
+//     h2{
+//       font-weight: 300;
+//       margin-bottom: 40px; 
+//       @media (max-width: 374px){
+//         font-size: 30px;
+//       } 
+//     }
+//     p{      
+//       margin-bottom: 40px;
+//       @media (max-width: 374px){
+//         font-size: 18px;
+//       }   
+//     }
     
-  }
-}
-section{
-  height: 100vh;
+//   }
+// }
+// section{
+//   height: 100vh;
   
   
-}
-//teamMember
-.teamMember-container{
-  margin-bottom: 50px;
-  color: white;
-  text-align: center;
-  .name{
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  .descripcion{
-    margin: 0 auto;
-    margin-top: 10px;
-    font-weight: 300;
-    max-width: 90%;
-  }
-  img{ 
-    border: 2px solid white;
-  }
+// }
+// //teamMember
+// .teamMember-container{
+//   margin-bottom: 50px;
+//   color: white;
+//   text-align: center;
+//   .name{
+//     margin-top: 10px;
+//     font-weight: bold;
+//   }
+//   .descripcion{
+//     margin: 0 auto;
+//     margin-top: 10px;
+//     font-weight: 300;
+//     max-width: 90%;
+//   }
+//   img{ 
+//     border: 2px solid white;
+//   }
 
-}
+// }
 
-#sa-conocenos{
-  position: fixed;
-  background-color: #555;
-  width: 1px;
-  height: 10%;
-  z-index: 10;
-  top: 20%;
-  right: 50%;
-  animation: sc-anim 3s ease-in-out infinite ;
-}
+// #sa-conocenos{
+//   position: fixed;
+//   background-color: #555;
+//   width: 1px;
+//   height: 10%;
+//   z-index: 10;
+//   top: 20%;
+//   right: 50%;
+//   animation: sc-anim 3s ease-in-out infinite ;
+// }
 
-@keyframes sc-anim{
-  0%{
-    opacity: 0;
-  }
-  20%{
-    opacity: 1;
-  }
-  70%{
-    height: 60%;
-    opacity: 1;
-  }
-  100%{
-    height: 60%;
-    opacity: 0;
-  }
-}
+// @keyframes sc-anim{
+//   0%{
+//     opacity: 0;
+//   }
+//   20%{
+//     opacity: 1;
+//   }
+//   70%{
+//     height: 60%;
+//     opacity: 1;
+//   }
+//   100%{
+//     height: 60%;
+//     opacity: 0;
+//   }
+// }
 
-#sa-flecha{
-  position: fixed;
-  width: 5vh;
-  height: 5%;
-  bottom: 65%;
-  left: 50%;
-  transform: translate(-50%, 0) rotate(45deg);
-  border: 1px solid #555;
-  border-top: none;
-  border-left: none;
-  animation: sc-arrow 3s ease-in-out infinite ;
+// #sa-flecha{
+//   position: fixed;
+//   width: 5vh;
+//   height: 5%;
+//   bottom: 65%;
+//   left: 50%;
+//   transform: translate(-50%, 0) rotate(45deg);
+//   border: 1px solid #555;
+//   border-top: none;
+//   border-left: none;
+//   animation: sc-arrow 3s ease-in-out infinite ;
 
-}
+// }
 
-@keyframes sc-arrow{
-  0%{
-    opacity: 0;
-    bottom: 65%;
-  }
-  20%{
-    opacity: 1;
-  }
-  70%{
-    bottom: 10%;
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-    bottom: 5%;
-  }
-}
+// @keyframes sc-arrow{
+//   0%{
+//     opacity: 0;
+//     bottom: 65%;
+//   }
+//   20%{
+//     opacity: 1;
+//   }
+//   70%{
+//     bottom: 10%;
+//     opacity: 1;
+//   }
+//   100%{
+//     opacity: 0;
+//     bottom: 5%;
+//   }
+// }
 
 
