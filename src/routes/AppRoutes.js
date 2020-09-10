@@ -10,6 +10,7 @@ import { ConocenosDetalle } from '../pages/conocenos/ConocenosDetalle'
 import { Footer } from '../pages/Footer'
 import Header2 from '../components/Header2'
 import Mouse from './../components/mouse';
+import Loader from './../components/Loader'
 
 
 export const AppRoutes = () => {
@@ -18,6 +19,7 @@ export const AppRoutes = () => {
     return (
         <Router>            
             <div>   
+                <Loader  />
                 <Mouse />             
                 <Switch>
                     <Route path='/Conocenos/info'>
