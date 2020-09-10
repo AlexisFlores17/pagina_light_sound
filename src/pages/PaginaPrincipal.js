@@ -71,6 +71,11 @@ export const PaginaPrincipal = () => {
         document.querySelector('.ball').style.display = "block";
       }
       
+      if(window.scrollY > window.innerHeight/2){
+        document.querySelector(".header-navbar").style.display="none";
+      }else{
+        document.querySelector(".header-navbar").style.display="block";
+      }
     })
 
   });
