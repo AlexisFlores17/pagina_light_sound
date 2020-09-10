@@ -110,17 +110,18 @@ export const Contacto = () => {
                 </div> 
 
                 <div id="contacto-left-movil" ref={el => contacto = el} className="col-xl-6">
-                    <h1 className="contacto-titulo-movil col-12" ref={ el => line1 = el}>
-                        Hagamos algo juntos
-                    </h1>
-                    <h5 className="contacto-texto-movil col-12" >
-                        <div>
-                            <div ref= {el => line2 = el}>¿Tienes algún desafío creativo para nosotros?</div>
-                            <br></br>
-                            <br></br>
-                            <div ref= {el => line3 = el}>Nos encantaría escucharlo</div>
-                        </div>
-                    </h5>
+                    
+                        <h1 className="contacto-titulo-movil col-12" ref={ el => line1 = el}>
+                            Hagamos algo juntos
+                        </h1>
+                        <h5 className="contacto-texto-movil col-12" >
+                            <div>
+                                <div ref= {el => line2 = el}>¿Tienes algún desafío creativo para nosotros?</div>
+                                <br></br>
+                                <br></br>
+                                <div ref= {el => line3 = el}>Nos encantaría escucharlo</div>
+                            </div>
+                        </h5>
                     <br></br>
                     <div id="contacto-animacion" >
         
