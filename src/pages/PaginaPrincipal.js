@@ -57,6 +57,18 @@ export const PaginaPrincipal = () => {
       lax.updateElements();    
     });
 
+    window.addEventListener("scroll", (e) =>{
+
+      if(window.scrollY > window.innerHeight*3){
+        document.querySelector('.ball1').style.backgroundColor = "black";
+        document.querySelector('.ball').style.borderColor = "black";
+      }else{
+        document.querySelector('.ball1').style.backgroundColor = "white";
+        document.querySelector('.ball').style.borderColor = "white";
+      }
+      
+    })
+
   });
 
   function scrollTop() {
