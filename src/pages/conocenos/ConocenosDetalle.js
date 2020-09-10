@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import TeamMember from "../../components/TeamMember";
 import destruido from "../../images/destruido300.JPG";
 import lorenzo from "../../images/lorenzo300.png";
@@ -47,6 +47,10 @@ const team = [
 
 export const ConocenosDetalle = () => {
   useLax();
+
+  useEffect(() => {
+    window.removeEventListener("scroll", (e) =>{});
+  },[])
 
   return (
     <>

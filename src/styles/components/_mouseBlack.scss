@@ -1,0 +1,47 @@
+
+  .ballBlack {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 3px solid rgb(50, 50, 50);
+    border-radius: 50%;
+    z-index: 0;
+    animation: cursor-animation 2s ease-in-out infinite;
+  }
+  
+  @keyframes cursor-animation {
+    0% {
+      width: 50px;
+      height: 50px;
+    }
+    50% {
+      width: 20px;
+      height: 20px;
+    }
+    100% {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .ball1Black {
+    display: none;
+    width: 10px;
+    height: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(50, 50, 50);
+    border-radius: 50%;
+    z-index: 0;
+  }
+  
+  @media (max-width: 540px) {
+    .ball,
+    .ball1 {
+      display: none;
+    }
+  }
+  

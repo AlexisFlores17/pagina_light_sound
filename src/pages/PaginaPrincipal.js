@@ -60,11 +60,15 @@ export const PaginaPrincipal = () => {
     window.addEventListener("scroll", (e) =>{
 
       if(window.scrollY > window.innerHeight*3){
-        document.querySelector('.ball1').style.backgroundColor = "black";
-        document.querySelector('.ball').style.borderColor = "black";
+        document.querySelector('.ball1Black').style.display = "block";
+        document.querySelector('.ballBlack').style.display = "block";
+        document.querySelector('.ball1').style.display = "none";
+        document.querySelector('.ball').style.display = "none";
       }else{
-        document.querySelector('.ball1').style.backgroundColor = "white";
-        document.querySelector('.ball').style.borderColor = "white";
+        document.querySelector('.ball1Black').style.display = "none";
+        document.querySelector('.ballBlack').style.display = "none";
+        document.querySelector('.ball1').style.display = "block";
+        document.querySelector('.ball').style.display = "block";
       }
       
     })

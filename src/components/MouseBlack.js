@@ -1,6 +1,6 @@
 import React, {useRef, useEffect} from 'react'
 import { gsap } from "gsap";
-import './../styles/components/_mouse.scss';
+import './../styles/components/_mouseBlack.scss';
 
 export default function Mouse() {
 
@@ -63,8 +63,8 @@ export default function Mouse() {
 
     return (
         <div>
-            <div className="ball" id="mw1" ref={el => ball = el}></div>
-            <div className="ball1" id="mw2" ref={el => ball1 = el}></div>
+            <div className="ballBlack" ref={el => ball = el}></div>
+            <div className="ball1Black" ref={el => ball1 = el}></div>
         </div>
     )
 }

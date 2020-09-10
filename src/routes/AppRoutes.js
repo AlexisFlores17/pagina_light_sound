@@ -10,6 +10,7 @@ import { ConocenosDetalle } from '../pages/conocenos/ConocenosDetalle'
 import { Footer } from '../pages/Footer'
 import Header2 from '../components/Header2'
 import Mouse from './../components/mouse';
+import MouseBlack from './../components/MouseBlack';
 import Loader from './../components/Loader'
 
 
@@ -20,7 +21,8 @@ export const AppRoutes = () => {
         <Router>            
             <div>   
                 <Loader  />
-                <Mouse />             
+                <Mouse />    
+                <MouseBlack />         
                 <Switch>
                     <Route path='/Conocenos/info'>
                         <Header2 />     
