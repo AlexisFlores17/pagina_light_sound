@@ -9,6 +9,10 @@
   border-radius: 50%;
   z-index: 0;
   animation: cursor-animation 2s ease-in-out infinite;
+
+  @media(max-width: 768px){
+    display: none;
+  }
 }
 
 @keyframes cursor-animation {
@@ -34,6 +38,9 @@
   background-color: white;
   border-radius: 50%;
   z-index: 0;
+  @media(max-width: 768px){
+    display: none;
+  }
 }
 
 @media (max-width: 540px) {
