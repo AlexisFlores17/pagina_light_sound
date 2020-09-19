@@ -9,10 +9,11 @@ import { PaginaPrincipal } from '../pages/PaginaPrincipal'
 import { ConocenosDetalle } from '../pages/conocenos/ConocenosDetalle'
 import { Footer } from '../pages/Footer'
 import Header2 from '../components/Header2'
+import Header3 from '../components/Header3'
 import Mouse from './../components/mouse';
 import MouseBlack from './../components/MouseBlack';
 import Loader from './../components/Loader'
-
+import Aviso from '../pages/Aviso'
 
 export const AppRoutes = () => {
     
@@ -29,8 +30,13 @@ export const AppRoutes = () => {
                         <ConocenosDetalle />    
                         <Footer />                       
                     </Route>
-                    <Route path='/'>
+                    <Route exact path='/'>
                         <PaginaPrincipal />                    
+                    </Route>
+                    <Route path='/Aviso'>
+                        
+                        <Aviso /> 
+                        
                     </Route>
 
                 </Switch>
