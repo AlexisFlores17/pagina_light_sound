@@ -34,9 +34,9 @@ export const AppRoutes = () => {
                         <PaginaPrincipal />                    
                     </Route>
                     <Route path='/Aviso'>
-                        
+                        <Header3 />     
                         <Aviso /> 
-                        
+                        <Footer />                                          
                     </Route>
 
                 </Switch>
