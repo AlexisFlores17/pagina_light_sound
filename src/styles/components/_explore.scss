@@ -37,15 +37,12 @@
       li{
 
         list-style: none;
-        cursor: pointer;
-
-        a{
-          color: white;
-          text-decoration: none;
-          &:hover {
-            color: $magenta;
-          }
+        color: white;
+        text-decoration: none;
+        &:hover {
+          color: $magenta;
         }
+        
       }
     }
   }
@@ -65,6 +62,7 @@
         }
     text-align: center;
     color: white;
+   
 }
 
 .explore-option{

@@ -11,11 +11,12 @@ import Lab from '../pages/explore/Lab';
 
 export const ExploreRoutes = () => {
     return (
-        <Switch>                
-            <Route exact path="/explore/Light" component={Light} />
-            <Route exact path="/explore/Sound" component={Sound} />
-            <Route exact path="/explore/Disruptive" component={Disruptive} />
-            <Route exact path="/explore/Lab" component={Lab} />
-        </Switch> 
+        <Light/>
+        // <Switch>                
+        //     <Route exact path="/explore/Light" component={Light} />
+        //     <Route exact path="/explore/Sound" component={Sound} />
+        //     <Route exact path="/explore/Disruptive" component={Disruptive} />
+        //     <Route exact path="/explore/Lab" component={Lab} />
+        // </Switch> 
     )
 }
