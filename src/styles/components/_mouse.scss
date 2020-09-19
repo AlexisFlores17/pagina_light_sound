@@ -46,6 +46,6 @@
 @media (max-width: 540px) {
   .ball,
   .ball1 {
-    display: none;
+    display: none !important;
   }
 }
