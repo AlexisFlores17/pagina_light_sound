@@ -24,7 +24,7 @@ export default function Plane() {
     let tl = gsap.timeline({
       duration: 10,
       scrollTrigger: {
-        trigger: ".animation",                
+        trigger: animation,                
         ease: "power1.easeInOut",
         toggleActions:"play none none none",
         start:"",

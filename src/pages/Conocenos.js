@@ -20,6 +20,9 @@ export const Conocenos = () => {
         height: container.offsetHeight
         });
         container.addEventListener("mousemove", onMove);
+        window.addEventListener('resize', handleResize)
+        // window.onresize = function(){ location.reload(); }
+
 
         var xSet = gsap.quickSetter(mask, "x", "px");
         var ySet = gsap.quickSetter(mask, "y", "px");
@@ -46,6 +49,9 @@ export const Conocenos = () => {
         function onMove(e) {
         mouse.x = e.x;
         mouse.y = e.y;
+        }
+        function handleResize(e) {
+            setTimeout(() => window.location.reload(false), 1000);
         }
     }, []);
     
