@@ -16,7 +16,7 @@ export const Contacto = () => {
     let line1 = useRef(null)
     let line2 = useRef(null)
     let line3 = useRef(null)
-    let contacto = useRef(null)
+    // let contacto = useRef(null)
     
 
 
@@ -50,7 +50,7 @@ export const Contacto = () => {
 
  
             <div className="contacto-div">
-                <div id="contacto-left" ref={el => contacto = el} className="col-xl-6">
+                <div id="contacto-left"  className="col-xl-6">
                         <h1 className="contacto-titulo col-12" ref={ el => line1 = el}>
                             Hagamos algo juntos
                         </h1>
@@ -109,7 +109,7 @@ export const Contacto = () => {
                     
                 </div> 
 
-                <div id="contacto-left-movil" ref={el => contacto = el} className="col-xl-6">
+                <div id="contacto-left-movil"  className="col-xl-6">
                     
                         <h1 className="contacto-titulo-movil col-12" ref={ el => line1 = el}>
                             Hagamos algo juntos

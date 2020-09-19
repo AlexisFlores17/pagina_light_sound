@@ -1,5 +1,5 @@
 import React, {useRef} from 'react'
-import gsap from 'gsap'
+// import gsap from 'gsap'
 import { ExploreRoutes } from '../routes/ExploreRoutes'
 import {
     BrowserRouter as Router, Link,  
@@ -13,23 +13,23 @@ export const Explore = () => {
     let line3 = useRef(null)  
     let line4 = useRef(null)
 
-    const handleHover = e => {    
-    gsap.to(e.target, {
-        duration: 0.3,
-        y: 6,
-        skewX: 4,
-        ease: 'power3.inOut' 
-    })
-    }
-    const handleHoverExit = e => {
-    gsap.to(e.target, {
-        duration: 0.3,
-        y: -6,
-        skewX: 0,
-        ease: 'power3.inOut' 
-    })
+    // const handleHover = e => {    
+    //     gsap.to(e.target, {
+    //         duration: 0.3,
+    //         y: 6,
+    //         skewX: 4,
+    //         ease: 'power3.inOut' 
+    //     })
+    // }
+    // const handleHoverExit = e => {
+    //     gsap.to(e.target, {
+    //         duration: 0.3,
+    //         y: -6,
+    //         skewX: 0,
+    //         ease: 'power3.inOut' 
+    //     })
 
-    } 
+    // } 
 
     const changeColor = e =>{
 
