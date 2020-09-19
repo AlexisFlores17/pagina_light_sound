@@ -6,7 +6,7 @@ export default function Aviso() {
         window.removeEventListener("scroll", changeCursor)        
     }, [])
     return (
-        <div style={{color:"white", width:"95%"}} className="container">
+        <div style={{color:"white", maxWidth:"90%"}} className="container">
             <h1>Aviso de privacidad para la protección de datos personales</h1>
             <p>En términos de lo previsto en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares,  Light and Sound Disruptive Lab Sociedad por Acciones Simplificada de C.V. (“LSD Lab”), como Responsable del tratamiento de los Datos Personales que recaba, pone a disposición del público en general, así como de sus clientes y usuarios (cada uno referido como “Titular”) el presente Aviso de Privacidad (El “Aviso”).</p>
             <p>La aportación que hagas de tus datos Personales a LSD Lab constituye la aceptación de estos Términos y Condiciones:</p>
