@@ -20,7 +20,7 @@ export const Conocenos = () => {
         height: container.offsetHeight
         });
         container.addEventListener("mousemove", onMove);
-        window.addEventListener('resize', handleResize)
+        // window.addEventListener('resize', handleResize)
         // window.onresize = function(){ location.reload(); }
 
 
@@ -50,9 +50,9 @@ export const Conocenos = () => {
         mouse.x = e.x;
         mouse.y = e.y;
         }
-        function handleResize(e) {
-            setTimeout(() => window.location.reload(false), 1000);
-        }
+        // function handleResize(e) {
+        //     setTimeout(() => window.location.reload(false), 1000);
+        // }
     }, []);
     
     return (
