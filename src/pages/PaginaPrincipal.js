@@ -66,7 +66,6 @@ export const PaginaPrincipal = () => {
 
   function scrollTop() {
     window.scroll(0, 0);
-    console.log("lasdf");
   }
 
   useLax();
