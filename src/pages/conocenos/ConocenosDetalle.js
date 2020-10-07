@@ -1,16 +1,22 @@
 import React, {useEffect} from "react";
 import TeamMember from "./../../components/TeamMember";
-import destruido from "./../../images/destruido300.JPG";
-import lorenzo from "./../../images/lorenzo300.png";
-import alex from "./../../images/alex300.JPG";
+// import destruido from "./../../images/destruido300.JPG";
+// import lorenzo from "./../../images/lorenzo300.png";
+// import alex from "./../../images/alex300.JPG";
 // import Reveal from "react-reveal/Fade";
-import diana from "./../../images/diana.jpeg";
-import mija from "./../../images/mija.jpeg";
-import mauro from "./../../images/mauro.jpeg";
+// import diana from "./../../images/diana.jpeg";
+// import mija from "./../../images/mija.jpeg";
+// import mauro from "./../../images/mauro.jpeg";
 import Plane from "./../../components/plane";
 import { useLax } from "use-lax";
 import changeCursor from './../../components/ChangeCursor'
 
+let alex = 'https://res.cloudinary.com/dyi84jpkl/image/upload/v1602114012/light_Sound/ctigvjibvs5oedog7iux.jpg'
+let destruido= 'https://res.cloudinary.com/dyi84jpkl/image/upload/v1602114000/light_Sound/twq4xtod5ykixkeakigw.jpg';
+let lorenzo= 'https://res.cloudinary.com/dyi84jpkl/image/upload/v1602114006/light_Sound/novj9vasiapa0nyebgyh.png';
+let diana=  'https://res.cloudinary.com/dyi84jpkl/image/upload/v1602114024/light_Sound/j5uhufjt2ejpzwtip5jn.jpg';
+let mija=  'https://res.cloudinary.com/dyi84jpkl/image/upload/v1602114026/light_Sound/hpc7fb9sa5hpm1acdkfz.jpg';
+let mauro=  'https://res.cloudinary.com/dyi84jpkl/image/upload/v1602114033/light_Sound/b846vncoithfscy4gjn3.jpg';
 
 const team = [
   {
