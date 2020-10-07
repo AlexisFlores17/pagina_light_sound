@@ -1,13 +1,13 @@
 import React, {useEffect} from "react";
-import TeamMember from "../../components/TeamMember";
-import destruido from "../../images/destruido300.JPG";
-import lorenzo from "../../images/lorenzo300.png";
-import alex from "../../images/alex300.JPG";
+import TeamMember from "./../../components/TeamMember";
+import destruido from "./../../images/destruido300.JPG";
+import lorenzo from "./../../images/lorenzo300.png";
+import alex from "./../../images/alex300.JPG";
 // import Reveal from "react-reveal/Fade";
-import diana from "../../images/diana.jpeg";
-import mija from "../../images/mija.jpeg";
-import mauro from "../../images/mauro.jpeg";
-import Plane from "../../components/plane";
+import diana from "./../../images/diana.jpeg";
+import mija from "./../../images/mija.jpeg";
+import mauro from "./../../images/mauro.jpeg";
+import Plane from "./../../components/plane";
 import { useLax } from "use-lax";
 import changeCursor from './../../components/ChangeCursor'
 
