@@ -25,7 +25,7 @@ export const AppRoutes = () => {
                 <Mouse />    
                 <MouseBlack />         
                 <Switch>
-                    <Route path='/Conocenos/info'>
+                    <Route exact path='/Conocenos/info'>
                         <Header2 />     
                         <ConocenosDetalle />    
                         <Footer />                       
