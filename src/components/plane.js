@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import "../styles/components/_plane.scss"
-import plane from "../images/paper.png";
+// import plane from "../images/paper.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
@@ -8,6 +8,8 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 export default function Plane() {
   gsap.registerPlugin(ScrollTrigger);
   gsap.registerPlugin(MotionPathPlugin);
+
+  let plane= 'https://res.cloudinary.com/dyi84jpkl/image/upload/v1602115265/light_Sound/mn7kb6n4gy5dbqgxkbm0.png' ;
   let animation = useRef(null);
   let planeImg = useRef(null);
 
