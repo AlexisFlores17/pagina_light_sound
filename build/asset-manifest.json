@@ -1,33 +1,26 @@
 {
   "files": {
     "main.css": "./static/css/main.0f24cc52.chunk.css",
-    "main.js": "./static/js/main.736f0874.chunk.js",
-    "main.js.map": "./static/js/main.736f0874.chunk.js.map",
+    "main.js": "./static/js/main.a76029d5.chunk.js",
+    "main.js.map": "./static/js/main.a76029d5.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.25d3d54a.js",
     "runtime-main.js.map": "./static/js/runtime-main.25d3d54a.js.map",
-    "static/js/2.0341d805.chunk.js": "./static/js/2.0341d805.chunk.js",
-    "static/js/2.0341d805.chunk.js.map": "./static/js/2.0341d805.chunk.js.map",
+    "static/js/2.d02588e7.chunk.js": "./static/js/2.d02588e7.chunk.js",
+    "static/js/2.d02588e7.chunk.js.map": "./static/js/2.d02588e7.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.09c3b123b30799c85bb4051bdad1fd68.js": "./precache-manifest.09c3b123b30799c85bb4051bdad1fd68.js",
+    "precache-manifest.56a3cefc3fe271823e79f1362fcb441d.js": "./precache-manifest.56a3cefc3fe271823e79f1362fcb441d.js",
     "service-worker.js": "./service-worker.js",
     "static/css/main.0f24cc52.chunk.css.map": "./static/css/main.0f24cc52.chunk.css.map",
-    "static/js/2.0341d805.chunk.js.LICENSE.txt": "./static/js/2.0341d805.chunk.js.LICENSE.txt",
+    "static/js/2.d02588e7.chunk.js.LICENSE.txt": "./static/js/2.d02588e7.chunk.js.LICENSE.txt",
     "static/media/MainApp.scss": "./static/media/LSDTeam.8003dc55.jpg",
     "static/media/_loader.scss": "./static/media/Preloader_6.5fa831f9.gif",
-    "static/media/alex300.JPG": "./static/media/alex300.1f80fc44.JPG",
     "static/media/backgroundweb.mp4": "./static/media/backgroundweb.2ad33262.mp4",
-    "static/media/contacto2.png": "./static/media/contacto2.a8aa22fb.png",
-    "static/media/destruido300.JPG": "./static/media/destruido300.b2d13df0.JPG",
-    "static/media/diana.jpeg": "./static/media/diana.85de1524.jpeg",
-    "static/media/lorenzo300.png": "./static/media/lorenzo300.aa7b71bd.png",
-    "static/media/mauro.jpeg": "./static/media/mauro.4fc784b6.jpeg",
-    "static/media/mija.jpeg": "./static/media/mija.14ac670a.jpeg",
-    "static/media/paper.png": "./static/media/paper.24477b86.png"
+    "static/media/contacto2.png": "./static/media/contacto2.a8aa22fb.png"
   },
   "entrypoints": [
     "static/js/runtime-main.25d3d54a.js",
-    "static/js/2.0341d805.chunk.js",
+    "static/js/2.d02588e7.chunk.js",
     "static/css/main.0f24cc52.chunk.css",
-    "static/js/main.736f0874.chunk.js"
+    "static/js/main.a76029d5.chunk.js"
   ]
 }
