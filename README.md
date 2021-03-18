@@ -1,2 +1,3 @@
-# pagina_final_light_sound
-Pagina ahora si final final 
+# Pagina Light And Sound Disruptive Lab
+
+Proyecto web realizado en react.js 
